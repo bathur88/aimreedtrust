@@ -1,0 +1,2609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>After Class 12 — Complete Career Guide | AIM REED Trust</title>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;0,700;1,400&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+:root {
+  /* AIM REED TRUST brand alignment */
+  --orange: #E8701A;
+  --orange-hover: #C85E10;
+  --orange-light: #FFF3EA;
+  --navy: #1A3A6B;
+  --navy-dark: #0F2444;
+  --teal: #2E7D9C;
+  --white: #FFFFFF;
+  --off-white: #F8F9FA;
+  --cream: #FDFAF5;
+  --text: #2D2D2D;
+  --muted: #6B7280;
+  --border: #E2E8F0;
+  --border-warm: #DDD5C8;
+  /* stream colours */
+  --green: #1B6B45;
+  --violet: #5B2C8D;
+  --rose: #B52B27;
+  --gold: #D4960A;
+  --gold-light: #FFF8E1;
+  --saffron: #E8701A;
+  --saffron-light: #FFF3EA;
+  --deep: #1A3A6B;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Source Sans 3', sans-serif;
+  background: var(--white);
+  color: var(--text);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* ── SITE HEADER ── */
+.site-header {
+  background: var(--navy-dark);
+  padding: 0 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  min-height: 64px;
+}
+.site-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+.site-logo img {
+  height: 44px;
+  width: auto;
+  border-radius: 4px;
+}
+.site-logo-text { display: flex; flex-direction: column; }
+.site-logo-name {
+  font-family: 'Lora', serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 0.5px;
+  line-height: 1.1;
+}
+.site-logo-tagline {
+  font-size: 10px;
+  color: rgba(255,255,255,0.55);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+.site-nav a {
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+.site-nav a:hover { color: white; background: rgba(255,255,255,0.1); }
+.site-nav .nav-cta {
+  background: var(--orange);
+  color: white !important;
+  border-radius: 4px;
+  padding: 7px 16px;
+  font-weight: 600;
+  margin-left: 6px;
+}
+.site-nav .nav-cta:hover { background: var(--orange-hover) !important; }
+
+/* ── LANG BAR ── */
+.lang-bar {
+  background: var(--off-white);
+  border-bottom: 1px solid var(--border);
+  padding: 7px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.lang-bar-left { color: var(--muted); font-size: 12px; display: flex; align-items: center; gap: 8px; }
+.lang-bar-left strong { color: var(--navy); }
+.lang-btns { display: flex; gap: 6px; }
+.lang-btn {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  padding: 4px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 12px;
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+.lang-btn.active { background: var(--orange); border-color: var(--orange); color: white; }
+
+/* ── HERO ── */
+.hero {
+  background: var(--navy);
+  padding: 56px 28px 64px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 60% 50% at 20% 60%, rgba(232,112,26,0.12) 0%, transparent 65%),
+    radial-gradient(ellipse 40% 40% at 80% 30%, rgba(46,125,156,0.10) 0%, transparent 65%);
+  pointer-events: none;
+}
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(232,112,26,0.18);
+  border: 1px solid rgba(232,112,26,0.35);
+  color: #FDBA74;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 5px 16px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.hero h1 {
+  font-family: 'Lora', serif;
+  font-size: clamp(2rem, 6vw, 3.8rem);
+  font-weight: 700;
+  color: white;
+  line-height: 1.15;
+  position: relative;
+  margin-bottom: 8px;
+}
+.hero h1 em { color: var(--orange); font-style: italic; }
+.hero-ta {
+  font-family: 'Lora', serif;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  color: rgba(255,255,255,0.4);
+  font-style: italic;
+  margin-bottom: 18px;
+  position: relative;
+}
+.hero-desc {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.75);
+  max-width: 580px;
+  margin: 0 auto 5px;
+  position: relative;
+}
+.hero-desc-ta {
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.45);
+  max-width: 580px;
+  margin: 0 auto 36px;
+  position: relative;
+}
+.hero-pills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  position: relative;
+  margin-bottom: 40px;
+}
+.hero-pill {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  color: rgba(255,255,255,0.85);
+  padding: 7px 16px;
+  border-radius: 3px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+.hero-pill:hover { background: var(--orange); border-color: var(--orange); color: white; }
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  flex-wrap: wrap;
+  position: relative;
+}
+.stat { text-align: center; }
+.stat-num {
+  font-family: 'Lora', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--orange);
+  line-height: 1;
+}
+.stat-label { font-size: 11px; color: rgba(255,255,255,0.45); text-transform: uppercase; letter-spacing: 1.5px; margin-top: 4px; }
+
+/* ── IMPORTANT NOTICE BAR ── */
+.notice-bar {
+  background: var(--orange);
+  padding: 12px 28px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.notice-bar-icon { font-size: 1.2rem; flex-shrink: 0; }
+.notice-bar p { color: white; font-size: 0.88rem; font-weight: 500; line-height: 1.4; }
+.notice-bar p span { opacity: 0.88; font-weight: 400; }
+
+/* ── STICKY STREAM NAV ── */
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: white;
+  border-bottom: 2px solid var(--border);
+  padding: 0 28px;
+  display: flex;
+  gap: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.sticky-nav::-webkit-scrollbar { display: none; }
+.snav-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 13px 18px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--muted);
+  white-space: nowrap;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -2px;
+  transition: all 0.2s;
+}
+.snav-btn:hover { color: var(--navy); }
+.snav-btn.active { color: var(--navy); }
+.snav-btn[data-s="engineering"].active { border-color: var(--navy); color: var(--navy); }
+.snav-btn[data-s="medical"].active { border-color: var(--rose); color: var(--rose); }
+.snav-btn[data-s="science"].active { border-color: var(--teal); color: var(--teal); }
+.snav-btn[data-s="arts"].active { border-color: var(--violet); color: var(--violet); }
+.snav-btn[data-s="commerce"].active { border-color: var(--green); color: var(--green); }
+.snav-btn[data-s="agriculture"].active { border-color: #5C7A29; color: #5C7A29; }
+.snav-btn[data-s="law"].active { border-color: #8B2500; color: #8B2500; }
+.snav-btn[data-s="vocational"].active { border-color: var(--rose); color: var(--rose); }
+.snav-btn[data-s="distance"].active { border-color: var(--navy); color: var(--navy); }
+.snav-btn[data-s="govt"].active { border-color: var(--orange); color: var(--orange); }
+.snav-btn[data-s="scholarships"].active { border-color: var(--gold); color: var(--gold); }
+
+/* ── MAIN CONTENT ── */
+.main { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
+
+/* ── STREAM SECTION ── */
+.stream-section { display: none; padding: 48px 0 60px; }
+.stream-section.active { display: block; animation: fadeUp 0.3s ease; }
+@keyframes fadeUp { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+.stream-banner {
+  border-radius: 6px;
+  padding: 30px 32px;
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.stream-banner::after {
+  content: '';
+  position: absolute;
+  right: -30px; top: -30px;
+  width: 180px; height: 180px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.04);
+}
+.stream-banner-icon { font-size: 2.6rem; flex-shrink: 0; position: relative; }
+.stream-banner-text h2 {
+  font-family: 'Lora', serif;
+  font-size: clamp(1.4rem, 3.5vw, 2rem);
+  font-weight: 700;
+  color: white;
+  margin-bottom: 4px;
+}
+.stream-banner-text .ta-sub { color: rgba(255,255,255,0.6); font-size: 0.88rem; margin-bottom: 5px; }
+.stream-banner-text p { color: rgba(255,255,255,0.78); font-size: 0.88rem; line-height: 1.55; }
+
+/* ── SUBSECTION ── */
+.subsection { margin-bottom: 36px; }
+.subsection-title {
+  font-family: 'Lora', serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.subsection-title-ta { font-size: 0.83rem; color: var(--muted); margin-bottom: 14px; font-style: italic; }
+.subsection-divider { width: 40px; height: 3px; border-radius: 2px; margin-bottom: 8px; }
+
+/* ── COURSE GRID ── */
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 14px;
+}
+.course-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 18px 20px;
+  transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+.course-card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.08); border-color: #C5D3E0; }
+.course-card-header { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; }
+.course-icon { font-size: 1.4rem; flex-shrink: 0; margin-top: 2px; }
+.course-card h4 { font-size: 0.93rem; font-weight: 700; color: var(--navy); line-height: 1.3; font-family: 'Lora', serif; }
+.course-card .ta-name { font-size: 0.78rem; color: var(--muted); margin-bottom: 6px; font-style: italic; }
+.course-card p { font-size: 0.83rem; color: #4B5563; line-height: 1.5; }
+.tag-row { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 10px; }
+.tag {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: 3px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+.tag-govt { background: #DBEAFE; color: #1D4ED8; }
+.tag-private { background: #FEF3C7; color: #92400E; }
+.tag-neet { background: #FCE7F3; color: #9D174D; }
+.tag-jee { background: #EDE9FE; color: #5B21B6; }
+.tag-skill { background: #D1FAE5; color: #065F46; }
+.tag-free { background: #D1FAE5; color: #065F46; }
+
+/* ── SIMPLE LIST ── */
+.course-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 7px;
+}
+.course-list-item {
+  background: var(--off-white);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 9px 13px;
+  font-size: 0.86rem;
+  font-weight: 500;
+  color: var(--navy);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.15s;
+}
+.course-list-item:hover { background: var(--orange-light); border-color: #F4B48A; color: var(--navy); }
+.course-list-item::before { content: '→'; color: var(--orange); font-weight: 700; flex-shrink: 0; }
+
+/* ── COLLEGE CARDS ── */
+.college-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 12px;
+}
+.college-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 14px 16px;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+.college-card:hover { box-shadow: 0 4px 14px rgba(0,0,0,0.08); }
+.college-dot { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; margin-top: 5px; }
+.college-card strong { display: block; font-size: 0.9rem; font-weight: 700; color: var(--navy); margin-bottom: 2px; font-family: 'Lora', serif; }
+.college-card .college-note { font-size: 0.79rem; color: var(--muted); line-height: 1.4; margin-bottom: 6px; }
+.college-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  color: var(--orange);
+  font-size: 0.77rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: opacity 0.15s;
+}
+.college-link::after { content: '↗'; font-size: 0.68rem; }
+.college-link:hover { opacity: 0.7; text-decoration: underline; }
+
+/* ── EXAM CARDS ── */
+.exam-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 12px;
+}
+.exam-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 16px;
+  text-align: center;
+  transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+.exam-card:hover { box-shadow: 0 4px 14px rgba(0,0,0,0.08); border-color: #C5D3E0; }
+.exam-name { font-family: 'Lora', serif; font-size: 1.1rem; font-weight: 700; color: var(--navy); }
+.exam-full { font-size: 0.74rem; color: var(--muted); margin: 3px 0 6px; line-height: 1.3; }
+.exam-for { font-size: 0.81rem; color: var(--text); font-weight: 500; margin-bottom: 10px; }
+.exam-link {
+  display: inline-block;
+  background: var(--orange);
+  color: white;
+  font-size: 0.74rem;
+  font-weight: 700;
+  padding: 5px 14px;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: all 0.15s;
+}
+.exam-link:hover { background: var(--orange-hover); }
+.exam-link::after { content: ' ↗'; }
+
+/* ── GOVT JOBS GRID ── */
+.govt-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 14px;
+}
+.govt-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 16px 18px;
+  transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+.govt-card:hover { box-shadow: 0 4px 14px rgba(0,0,0,0.08); }
+.govt-card h4 { font-size: 0.93rem; font-weight: 700; color: var(--navy); margin-bottom: 4px; font-family: 'Lora', serif; }
+.govt-card p { font-size: 0.81rem; color: var(--muted); margin-bottom: 10px; line-height: 1.4; }
+.govt-card a {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  color: var(--orange);
+  font-size: 0.79rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+.govt-card a::after { content: '↗'; font-size: 0.68rem; }
+.govt-card a:hover { text-decoration: underline; }
+
+/* ── CALLOUT BOXES ── */
+.callout {
+  border-radius: 4px;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+.callout-icon { font-size: 1.4rem; flex-shrink: 0; }
+.callout h4 { font-weight: 700; margin-bottom: 3px; font-size: 0.93rem; font-family: 'Lora', serif; }
+.callout p { font-size: 0.84rem; line-height: 1.55; }
+.callout a { font-weight: 700; }
+.callout.tip { background: #F0FDF4; border-left: 4px solid #22C55E; }
+.callout.tip h4 { color: #14532D; }
+.callout.tip p { color: #166534; }
+.callout.tip a { color: #15803D; }
+.callout.info { background: #EFF6FF; border-left: 4px solid #3B82F6; }
+.callout.info h4 { color: var(--navy); }
+.callout.info p { color: #1D4ED8; }
+.callout.info a { color: var(--navy); }
+.callout.trust { background: var(--orange-light); border-left: 4px solid var(--orange); }
+.callout.trust h4 { color: #92400E; }
+.callout.trust p { color: #78350F; }
+
+/* ── SCHOLARSHIP CARDS ── */
+.scholarship-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 16px;
+}
+.scholarship-card {
+  background: white;
+  border: 1.5px solid #E9C46A;
+  border-radius: 4px;
+  padding: 20px;
+  transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+.scholarship-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(212,150,10,0.12); }
+.scholarship-card .sc-icon { font-size: 1.7rem; margin-bottom: 10px; }
+.scholarship-card h4 { font-weight: 700; color: var(--navy); font-size: 0.95rem; margin-bottom: 3px; font-family: 'Lora', serif; }
+.scholarship-card .ta-name { font-size: 0.76rem; color: var(--muted); margin-bottom: 8px; font-style: italic; }
+.scholarship-card p { font-size: 0.82rem; color: #4B5563; line-height: 1.5; margin-bottom: 12px; }
+.scholarship-card a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--orange);
+  color: white;
+  font-size: 0.77rem;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: all 0.15s;
+}
+.scholarship-card a::after { content: '↗'; }
+.scholarship-card a:hover { background: var(--orange-hover); }
+
+/* ── SERVICES BOX ── */
+.services-box {
+  background: var(--navy);
+  border-radius: 6px;
+  padding: 28px;
+  margin-bottom: 28px;
+  color: white;
+}
+.services-box h3 {
+  font-family: 'Lora', serif;
+  font-size: 1.2rem;
+  color: #FDBA74;
+  margin-bottom: 18px;
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 10px;
+}
+.service-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 4px;
+  padding: 12px 14px;
+}
+.service-item .si-icon { font-size: 1.1rem; flex-shrink: 0; }
+.service-item p { font-size: 0.83rem; color: #D1D5DB; line-height: 1.4; }
+.service-item a { color: #FDBA74; text-decoration: none; font-size: 0.77rem; display: block; margin-top: 3px; font-weight: 600; }
+.service-item a:hover { text-decoration: underline; }
+.service-item a::after { content: ' ↗'; }
+
+/* ── CTA SECTION ── */
+.cta-section {
+  background: var(--navy);
+  padding: 64px 28px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.cta-section::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse 60% 50% at 50% 100%, rgba(232,112,26,0.14) 0%, transparent 65%);
+}
+.cta-section h2 {
+  font-family: 'Lora', serif;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  color: white;
+  position: relative;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+.cta-section h2 em { color: var(--orange); font-style: italic; }
+.cta-sub { color: rgba(255,255,255,0.7); font-size: 1rem; position: relative; margin-bottom: 5px; }
+.cta-sub-ta { color: rgba(255,255,255,0.45); font-size: 0.86rem; position: relative; margin-bottom: 40px; }
+.cta-features {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  position: relative;
+  max-width: 820px;
+  margin: 0 auto 44px;
+}
+.cta-feat {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 4px;
+  padding: 18px 22px;
+  text-align: left;
+  min-width: 210px;
+  flex: 1;
+  max-width: 250px;
+  transition: all 0.2s;
+}
+.cta-feat:hover { background: rgba(255,255,255,0.1); }
+.cta-feat .cf-icon { font-size: 1.5rem; margin-bottom: 10px; }
+.cta-feat h4 { color: white; font-size: 0.93rem; font-weight: 700; margin-bottom: 5px; font-family: 'Lora', serif; }
+.cta-feat p { color: #9CA3AF; font-size: 0.79rem; line-height: 1.45; }
+.cta-btn {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--orange);
+  color: white;
+  padding: 15px 44px;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.2s;
+}
+.cta-btn:hover { background: var(--orange-hover); transform: translateY(-2px); box-shadow: 0 10px 28px rgba(232,112,26,0.35); }
+.cta-btn span { font-size: 0.76rem; font-weight: 400; opacity: 0.82; margin-top: 2px; }
+
+/* ── FOOTER ── */
+footer {
+  background: var(--navy-dark);
+  padding: 36px 28px;
+  text-align: center;
+}
+.footer-logo {
+  font-family: 'Lora', serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 4px;
+}
+.footer-logo em { color: var(--orange); font-style: italic; }
+.footer-tagline { color: rgba(255,255,255,0.45); font-size: 0.82rem; margin-bottom: 18px; letter-spacing: 1px; text-transform: uppercase; }
+.footer-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 6px; margin-bottom: 18px; }
+.footer-links a {
+  color: rgba(255,255,255,0.6);
+  text-decoration: none;
+  font-size: 0.8rem;
+  padding: 4px 11px;
+  border-radius: 3px;
+  border: 1px solid rgba(255,255,255,0.12);
+  transition: all 0.15s;
+}
+.footer-links a:hover { color: white; border-color: rgba(255,255,255,0.3); }
+.footer-hashtags { color: rgba(255,255,255,0.28); font-size: 0.78rem; margin-bottom: 8px; }
+.footer-credit { color: rgba(255,255,255,0.22); font-size: 0.73rem; }
+
+/* ── LANG TOGGLE ── */
+.en { display: block; }
+.ta { display: block; }
+.en-inline { display: inline; }
+.ta-inline { display: inline; }
+body.en-only .ta { display: none !important; }
+body.en-only .ta-inline { display: none !important; }
+body.ta-only .en { display: none !important; }
+body.ta-only .en-inline { display: none !important; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 640px) {
+  .site-header { padding: 0 16px; min-height: 56px; }
+  .site-nav { display: none; }
+  .stream-banner { padding: 20px 18px; flex-direction: column; gap: 10px; }
+  .course-grid, .college-grid, .exam-grid, .govt-grid, .scholarship-grid { grid-template-columns: 1fr; }
+  .cta-feat { max-width: 100%; }
+  .hero-stats { gap: 20px; }
+  .main { padding: 0 16px; }
+}
+
+/* ── SEARCH SECTION ── */
+.search-section {
+  background: var(--off-white);
+  border-bottom: 1px solid var(--border);
+  padding: 44px 24px 36px;
+}
+.search-inner {
+  max-width: 820px;
+  margin: 0 auto;
+}
+.search-heading {
+  text-align: center;
+  margin-bottom: 24px;
+}
+.search-heading h2 {
+  font-family: 'Lora', serif;
+  font-size: clamp(1.3rem, 3vw, 1.9rem);
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 6px;
+}
+.search-heading p {
+  font-size: 0.92rem;
+  color: var(--muted);
+  margin: 0;
+}
+.search-box-wrap {
+  background: white;
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  padding: 20px 20px 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+.search-input-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+.search-input {
+  flex: 1;
+  min-width: 200px;
+  padding: 12px 16px;
+  font-size: 0.97rem;
+  font-family: 'Source Sans 3', sans-serif;
+  border: 1.5px solid var(--border);
+  border-radius: 4px;
+  outline: none;
+  color: var(--text);
+  transition: border-color 0.2s;
+  background: var(--off-white);
+}
+.search-input:focus {
+  border-color: var(--navy);
+  background: white;
+}
+.search-input::placeholder { color: #A0AEC0; }
+.search-btn {
+  background: var(--orange);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.93rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+.search-btn:hover { background: var(--orange-hover); }
+.search-clear {
+  background: var(--off-white);
+  color: var(--muted);
+  border: 1.5px solid var(--border);
+  padding: 12px 16px;
+  border-radius: 4px;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+.search-clear:hover { background: var(--border); color: var(--text); }
+.search-suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+.sug-label {
+  font-size: 0.78rem;
+  color: var(--muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-right: 2px;
+}
+.sug-pill {
+  background: var(--off-white);
+  border: 1px solid var(--border);
+  color: var(--navy);
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-family: 'Source Sans 3', sans-serif;
+  padding: 4px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.sug-pill:hover { background: var(--orange-light); border-color: var(--orange); color: var(--orange); }
+
+/* ── RESULTS ── */
+.search-results {
+  margin-top: 28px;
+}
+.results-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--border);
+}
+.results-title {
+  font-family: 'Lora', serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--navy);
+}
+.results-count {
+  font-size: 0.8rem;
+  color: var(--muted);
+  background: var(--off-white);
+  border: 1px solid var(--border);
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 14px;
+}
+.result-card {
+  background: white;
+  border: 1.5px solid var(--border);
+  border-radius: 6px;
+  padding: 18px 20px;
+  transition: all 0.2s;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  position: relative;
+}
+.result-card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.1); border-color: #A8C0D8; }
+.result-card.top-match { border-color: var(--orange); border-width: 2px; }
+.result-card.top-match::before {
+  content: '⭐ Best Match';
+  position: absolute;
+  top: -1px; right: 12px;
+  background: var(--orange);
+  color: white;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 10px;
+  border-radius: 0 0 6px 6px;
+  letter-spacing: 0.3px;
+}
+.result-stream-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 3px 9px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  color: white;
+}
+.result-card h4 {
+  font-family: 'Lora', serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 6px;
+  line-height: 1.3;
+}
+.result-card .result-desc {
+  font-size: 0.83rem;
+  color: #4B5563;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.result-card .result-steps {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+.result-card .result-steps strong { color: var(--navy); font-weight: 700; }
+.result-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+.result-btn {
+  display: inline-block;
+  background: var(--navy);
+  color: white;
+  font-size: 0.76rem;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 3px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: 'Source Sans 3', sans-serif;
+  transition: all 0.15s;
+}
+.result-btn:hover { background: var(--orange); }
+.result-btn.outline {
+  background: none;
+  border: 1.5px solid var(--navy);
+  color: var(--navy);
+}
+.result-btn.outline:hover { background: var(--navy); color: white; }
+.no-results {
+  text-align: center;
+  padding: 32px 20px;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+/* ── STREAM COLOURS ── */
+.eng-bg { background: linear-gradient(135deg, #0F1F3D 0%, #1A3A6B 100%); }
+.med-bg { background: linear-gradient(135deg, #7A1C1C 0%, #B52B27 100%); }
+.sci-bg { background: linear-gradient(135deg, #0A4D66 0%, #0D6E8A 100%); }
+.arts-bg { background: linear-gradient(135deg, #3D1A6B 0%, #5B2C8D 100%); }
+.comm-bg { background: linear-gradient(135deg, #0D4A2E 0%, #1B6B45 100%); }
+.agri-bg { background: linear-gradient(135deg, #2D4A0E 0%, #4A7A1E 100%); }
+.law-bg { background: linear-gradient(135deg, #5C1A00 0%, #8B2500 100%); }
+.voc-bg { background: linear-gradient(135deg, #7A1C1C 0%, #B52B27 100%); }
+.dist-bg { background: linear-gradient(135deg, #1A1A2E 0%, #2D2D4A 100%); }
+.govt-bg { background: linear-gradient(135deg, #3D2800 0%, #6B4400 100%); }
+.sch-bg { background: linear-gradient(135deg, #3D2E00 0%, #6B5100 100%); }
+</style>
+</head>
+<body>
+
+<!-- SITE HEADER — AIM REED TRUST -->
+<header class="site-header">
+  <a class="site-logo" href="https://aimreedtrust.org" target="_blank">
+    <img src="https://aimreedtrust.org/wp-content/uploads/2020/05/cropped-logo1.jpg" alt="AIM REED Trust Logo" onerror="this.style.display='none'"/>
+    <div class="site-logo-text">
+      <span class="site-logo-name">AIM REED TRUST</span>
+      <span class="site-logo-tagline">Serve The Society</span>
+    </div>
+  </a>
+  <nav class="site-nav">
+    <a href="https://aimreedtrust.org/about/" target="_blank">About</a>
+    <a href="https://aimreedtrust.org/trainings/" target="_blank">Trainings</a>
+    <a href="https://aimreedtrust.org/scholarship/" target="_blank">Scholarship</a>
+    <a href="https://aimreedtrust.org/joinus/" target="_blank">Join Us</a>
+    <a href="https://aimreedtrust.org/donate/" target="_blank" class="nav-cta">Donate</a>
+  </nav>
+</header>
+
+<!-- LANGUAGE BAR -->
+<div class="lang-bar">
+  <div class="lang-bar-left">🎓 <strong>After Class 12 — Career Guide</strong> &nbsp;|&nbsp; Tamil Nadu Students</div>
+  <div class="lang-btns">
+    <button class="lang-btn active" onclick="setLang('both',this)">Both / இரண்டும்</button>
+    <button class="lang-btn" onclick="setLang('en',this)">English</button>
+    <button class="lang-btn" onclick="setLang('ta',this)">தமிழ்</button>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-badge">🌟 AIM REED Trust — Tamil Nadu Student Guide</div>
+  <h1>Your Life After<br/><em>Class 12</em></h1>
+  <p class="hero-ta">12ஆம் வகுப்புக்கு பிறகு உங்கள் வாழ்க்கை</p>
+  <p class="hero-desc en">Every stream, every course, every entrance exam — all in one place. Built for Tamil Nadu students making life-changing decisions.</p>
+  <p class="hero-desc-ta ta">ஒவ்வொரு பிரிவும், ஒவ்வொரு படிப்பும், ஒவ்வொரு நுழைவுத் தேர்வும் — ஒரே இடத்தில். தமிழ்நாடு மாணவர்களுக்காக.</p>
+  <div class="hero-pills">
+    <a class="hero-pill" href="#" onclick="switchStream('engineering')">⚙️ Engineering</a>
+    <a class="hero-pill" href="#" onclick="switchStream('medical')">🏥 Medical</a>
+    <a class="hero-pill" href="#" onclick="switchStream('science')">🔬 Science</a>
+    <a class="hero-pill" href="#" onclick="switchStream('arts')">🎨 Arts & Humanities</a>
+    <a class="hero-pill" href="#" onclick="switchStream('commerce')">📊 Commerce</a>
+    <a class="hero-pill" href="#" onclick="switchStream('agriculture')">🌾 Agriculture</a>
+    <a class="hero-pill" href="#" onclick="switchStream('law')">⚖️ Law</a>
+    <a class="hero-pill" href="#" onclick="switchStream('vocational')">🔧 Vocational</a>
+    <a class="hero-pill" href="#" onclick="switchStream('govt')">🏛️ Govt Jobs</a>
+    <a class="hero-pill" href="#" onclick="switchStream('scholarships')">💛 Scholarships</a>
+  </div>
+  <div class="hero-stats">
+    <div class="stat"><div class="stat-num">10+</div><div class="stat-label en">Career Streams</div><div class="stat-label ta">தொழில் பாதைகள்</div></div>
+    <div class="stat"><div class="stat-num">200+</div><div class="stat-label en">Course Options</div><div class="stat-label ta">படிப்பு வாய்ப்புகள்</div></div>
+    <div class="stat"><div class="stat-num">30+</div><div class="stat-label en">Official Links</div><div class="stat-label ta">அதிகாரப்பூர்வ இணைப்புகள்</div></div>
+    <div class="stat"><div class="stat-num">Free</div><div class="stat-label en">Always Free</div><div class="stat-label ta">எப்போதும் இலவசம்</div></div>
+  </div>
+</section>
+
+<!-- SEARCH SECTION -->
+<section class="search-section" id="searchSection">
+  <div class="search-inner">
+    <div class="search-heading">
+      <h2>🔍 <span class="en">What do you want to become?</span><span class="ta">நீங்கள் என்னவாக ஆக விரும்புகிறீர்கள்?</span></h2>
+      <p class="en">Type a job, subject, interest or dream — we'll show you the right courses and paths.</p>
+      <p class="ta">ஒரு வேலை, பாடம், ஆர்வம் அல்லது கனவை தட்டச்சு செய்யுங்கள் — சரியான படிப்பு பாதையை காண்பிக்கிறோம்.</p>
+    </div>
+    <div class="search-box-wrap">
+      <div class="search-input-row">
+        <input type="text" id="searchInput" class="search-input"
+          placeholder="e.g. doctor, software engineer, government job, business, farmer..."
+          oninput="liveSearch(this.value)"
+          onkeydown="if(event.key==='Enter') doSearch()" />
+        <button class="search-btn" onclick="doSearch()">Find My Path</button>
+        <button class="search-clear" id="clearBtn" onclick="clearSearch()" style="display:none">✕ Clear</button>
+      </div>
+      <div class="search-suggestions">
+        <span class="sug-label">Try:</span>
+        <button class="sug-pill" onclick="quickSearch('doctor')">Doctor</button>
+        <button class="sug-pill" onclick="quickSearch('software engineer')">Software Engineer</button>
+        <button class="sug-pill" onclick="quickSearch('government job')">Govt Job</button>
+        <button class="sug-pill" onclick="quickSearch('business')">Business</button>
+        <button class="sug-pill" onclick="quickSearch('lawyer')">Lawyer</button>
+        <button class="sug-pill" onclick="quickSearch('teacher')">Teacher</button>
+        <button class="sug-pill" onclick="quickSearch('nurse')">Nurse</button>
+        <button class="sug-pill" onclick="quickSearch('design')">Design / Arts</button>
+        <button class="sug-pill" onclick="quickSearch('farmer')">Farmer</button>
+        <button class="sug-pill" onclick="quickSearch('police')">Police</button>
+        <button class="sug-pill" onclick="quickSearch('bank')">Banking</button>
+        <button class="sug-pill" onclick="quickSearch('army')">Army / Defence</button>
+        <button class="sug-pill" onclick="quickSearch('film')">Films / Media</button>
+        <button class="sug-pill" onclick="quickSearch('scholarship')">Need Scholarship</button>
+      </div>
+    </div>
+    <!-- RESULTS -->
+    <div id="searchResults" class="search-results" style="display:none">
+      <div class="results-header">
+        <span id="resultsTitle" class="results-title"></span>
+        <span id="resultsCount" class="results-count"></span>
+      </div>
+      <div id="resultsGrid" class="results-grid"></div>
+      <div id="noResults" class="no-results" style="display:none">
+        <div style="font-size:2rem;margin-bottom:10px">🤔</div>
+        <p class="en">No exact match found. Try different words or browse streams below.<br/>
+        <a href="mailto:info@aimreedtrust.org" style="color:var(--orange);font-weight:700">Contact AIM REED Trust for personal guidance →</a></p>
+        <p class="ta">சரியான பொருத்தம் கிடைக்கவில்லை. வேறு வார்த்தைகளை முயற்சிக்கவும்.<br/>
+        <a href="mailto:info@aimreedtrust.org" style="color:var(--orange);font-weight:700">தனிப்பட்ட வழிகாட்டலுக்கு தொடர்பு கொள்ளுங்கள் →</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NOTICE BAR -->
+<div class="notice-bar">
+  <div class="notice-bar-icon">📌</div>
+  <p class="en">This guide is based on the official Tamil Nadu Government's Career Options After +2 booklet, enriched with direct links and guidance from AIM REED Trust. <span>All links open official government and institution websites.</span></p>
+  <p class="ta">இந்த வழிகாட்டி தமிழ்நாடு அரசின் அதிகாரப்பூர்வ '+2 பின் தொழில் வாய்ப்புகள்' புத்தகத்தை அடிப்படையாகக் கொண்டது. <span>அனைத்து இணைப்புகளும் அதிகாரப்பூர்வ தளங்களுக்கு செல்கின்றன.</span></p>
+</div>
+
+<!-- STICKY NAV -->
+<nav class="sticky-nav" id="streamNav">
+  <button class="snav-btn active" data-s="engineering" onclick="switchStream('engineering',this)">⚙️ Engineering</button>
+  <button class="snav-btn" data-s="medical" onclick="switchStream('medical',this)">🏥 Medical</button>
+  <button class="snav-btn" data-s="science" onclick="switchStream('science',this)">🔬 B.Sc Science</button>
+  <button class="snav-btn" data-s="arts" onclick="switchStream('arts',this)">🎨 Arts & Humanities</button>
+  <button class="snav-btn" data-s="commerce" onclick="switchStream('commerce',this)">📊 Commerce</button>
+  <button class="snav-btn" data-s="agriculture" onclick="switchStream('agriculture',this)">🌾 Agriculture</button>
+  <button class="snav-btn" data-s="law" onclick="switchStream('law',this)">⚖️ Law</button>
+  <button class="snav-btn" data-s="vocational" onclick="switchStream('vocational',this)">🔧 Vocational & Diploma</button>
+  <button class="snav-btn" data-s="distance" onclick="switchStream('distance',this)">📱 Distance Education</button>
+  <button class="snav-btn" data-s="govt" onclick="switchStream('govt',this)">🏛️ Govt Jobs</button>
+  <button class="snav-btn" data-s="scholarships" onclick="switchStream('scholarships',this)">💛 Scholarships</button>
+</nav>
+
+<div class="main">
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- ENGINEERING STREAM -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<section class="stream-section active" id="s-engineering">
+  <div class="stream-banner eng-bg">
+    <div class="stream-banner-icon">⚙️</div>
+    <div class="stream-banner-text">
+      <h2 class="en">Engineering Courses</h2>
+      <h2 class="ta">பொறியியல் படிப்புகள்</h2>
+      <div class="ta-sub ta">B.E / B.Tech — 4 Year Degree</div>
+      <p class="en">Physics, Chemistry & Maths students can choose from 50+ engineering branches. Admission via JEE / TNEA based on Class 12 marks.</p>
+      <p class="ta">இயற்பியல், வேதியியல் & கணிதம் படித்தவர்கள் 50+ பொறியியல் பிரிவுகளில் சேரலாம். JEE / TNEA மூலம் சேர்க்கை.</p>
+    </div>
+  </div>
+
+  <div class="callout info">
+    <div class="callout-icon">💡</div>
+    <div>
+      <h4 class="en">Official Admissions Portal: Anna University</h4>
+      <h4 class="ta">அதிகாரப்பூர்வ சேர்க்கை இணையதளம்: அண்ணா பல்கலைக்கழகம்</h4>
+      <p class="en">All Tamil Nadu engineering college admissions (500+ colleges) are handled through TNEA — tneaonline.org — based on Class 12 PCM marks. No separate entrance exam needed for state quota.</p>
+      <p class="ta">TNEA மூலம் (tneaonline.org) 500+ கல்லூரிகளில் சேர்க்கை. 12ஆம் வகுப்பு மதிப்பெண் அடிப்படையில் — தனி நுழைவுத் தேர்வு தேவையில்லை.</p>
+    </div>
+  </div>
+
+  <div class="subsection">
+    <div class="subsection-divider" style="background:var(--navy)"></div>
+    <div class="subsection-title">🖥️ <span class="en">Computer Science & IT Branches</span><span class="ta">கணினி அறிவியல் & IT பிரிவுகள்</span></div>
+    <div class="subsection-title-ta ta">அதிக வேலை வாய்ப்பு உள்ள பிரிவுகள்</div>
+    <div class="course-list">
+      <div class="course-list-item">B.E. Computer Science & Engineering</div>
+      <div class="course-list-item">B.E. CSE (Cyber Security)</div>
+      <div class="course-list-item">B.E. CSE (AI & Machine Learning)</div>
+      <div class="course-list-item">B.E. Computer Science & Design</div>
+      <div class="course-list-item">B.Tech. Artificial Intelligence & Data Science</div>
+      <div class="course-list-item">B.Tech. Information Technology</div>
+      <div class="course-list-item">B.E. Electronics & Communication Engg</div>
+      <div class="course-list-item">B.E. Computer & Communication Engg</div>
+      <div class="course-list-item">B.E. Electronics & TeleCommunication</div>
+      <div class="course-list-item">B.Tech. Computer Science & Business Systems</div>
+      <div class="course-list-item">B.E. Biomedical Engineering</div>
+      <div class="course-list-item">B.E. Medical Electronics</div>
+    </div>
+  </div>
+
+  <div class="subsection">
+    <div class="subsection-divider" style="background:var(--navy)"></div>
+    <div class="subsection-title">⚙️ <span class="en">Mechanical & Manufacturing</span><span class="ta">இயந்திர & உற்பத்தி பொறியியல்</span></div>
+    <div class="course-list">
+      <div class="course-list-item">B.E. Mechanical Engineering</div>
+      <div class="course-list-item">B.E. Aeronautical Engineering</div>
+      <div class="course-list-item">B.E. Automobile Engineering</div>
+      <div class="course-list-item">B.E. Aerospace Engineering</div>
+      <div class="course-list-item">B.E. Mechatronics Engineering</div>
+      <div class="course-list-item">B.E. Robotics and Automation</div>
+      <div class="course-list-item">B.E. Manufacturing Engineering</div>
+      <div class="course-list-item">B.E. Production Engineering</div>
+      <div class="course-list-item">B.E. Industrial Engineering</div>
+      <div class="course-list-item">B.E. Mining Engineering</div>
+      <div class="course-list-item">B.E. Safety and Fire Engineering</div>
+      <div class="course-list-item">B.E. Materials Science & Engineering</div>
+    </div>
+  </div>
+
+  <div class="subsection">
+    <div class="subsection-divider" style="background:var(--navy)"></div>
+    <div class="subsection-title">⚡ <span class="en">Electrical & Civil</span><span class="ta">மின்சாரம் & சிவில்</span></div>
+    <div class="course-list">
+      <div class="course-list-item">B.E. Electrical & Electronics Engineering</div>
+      <div class="course-list-item">B.E. Electronics & Instrumentation Engg</div>
+      <div class="course-list-item">B.E. Instrumentation & Control Engineering</div>
+      <div class="course-list-item">B.E. Civil Engineering</div>
+      <div class="course-list-item">B.E. Environmental Engineering</div>
+      <div class="course-list-item">B.E. Geo Informatics Engineering</div>
+      <div class="course-list-item">B.Tech. Agricultural Engineering</div>
+      <div class="course-list-item">B.Arch. (Architecture)</div>
+      <div class="course-list-item">B.Plan. (Planning)</div>
+    </div>
+  </div>
+
+  <div class="subsection">
+    <div class="subsection-divider" style="background:var(--navy)"></div>
+    <div class="subsection-title">🧪 <span class="en">Technology Specialisations</span><span class="ta">தொழில்நுட்ப சிறப்பு படிப்புகள்</span></div>
+    <div class="course-list">
+      <div class="course-list-item">B.Tech. Biotechnology</div>
+      <div class="course-list-item">B.Tech. Chemical Engineering</div>
+      <div class="course-list-item">B.Tech. Food Technology</div>
+      <div class="course-list-item">B.Tech. Textile Technology</div>
+      <div class="course-list-item">B.Tech. Fashion Technology</div>
+      <div class="course-list-item">B.Tech. Petroleum Engineering</div>
+      <div class="course-list-item">B.Tech. Leather Technology</div>
+      <div class="course-list-item">B.Tech. Rubber & Plastics Technology</div>
+      <div class="course-list-item">B.Tech. Industrial Bio-Technology</div>
+      <div class="course-list-item">B.Tech. Energy & Environmental Engineering</div>
+      <div class="course-list-item">B.Tech. Polymer Technology</div>
+      <div class="course-list-item">B.Tech. Pharmaceutical Technology</div>
+      <div class="course-list-item">B.E. Printing & Packaging Technology</div>
+      <div class="course-list-item">B.Tech. Ceramic Technology</div>
+      <div class="course-list-item">B.E. Petrochemical Engineering</div>
+    </div>
+  </div>
+
+  <div class="callout tip">
+    <div class="callout-icon">🎓</div>
+    <div>
+      <h4 class="en">Diploma to Degree — Lateral Entry (Save 1 Year!)</h4>
+      <h4 class="ta">டிப்ளோமாவில் இருந்து பட்டம் — பக்கவாட்டு நுழைவு</h4>
+      <p class="en">Completed a 3-year Polytechnic Diploma? You can enter directly into the 2nd year of B.E./B.Tech through Lateral Entry. Visit <a href="https://www.tnlea.com" target="_blank">tnlea.com</a> for details.</p>
+      <p class="ta">3 ஆண்டு பாலிடெக்னிக் டிப்ளோமா முடித்தவர்கள் நேரடியாக B.E 2ம் ஆண்டில் சேரலாம்.</p>
+    </div>
+  </div>
+
+  <div class="subsection">
+    <div class="subsection-divider" style="background:var(--navy)"></div>
+    <div class="subsection-title">🏛️ <span class="en">Top Colleges & Links</span><span class="ta">சிறந்த கல்லூரிகள்</span></div>
+    <div class="college-grid">
+      <div class="college-card"><div class="college-dot" style="background:var(--navy)"></div><div><strong>IIT Madras</strong><div class="college-note en">Premier engineering & research — JEE Advanced</div><div class="college-note ta">JEE Advanced மூலம் சேர்க்கை</div><a class="college-link" href="https://www.iitm.ac.in" target="_blank">iitm.ac.in</a></div></div>
+      <div class="college-card"><div class="college-dot" style="background:#2C4A8F"></div><div><strong>Anna University, Chennai</strong><div class="college-note en">TN's top engineering university — TNEA</div><div class="college-note ta">TNEA மூலம் சேர்க்கை</div><a class="college-link" href="https://www.annauniv.edu" target="_blank">annauniv.edu</a></div></div>
+      <div class="college-card"><div class="college-dot" style="background:var(--saffron)"></div><div><strong>PSG College of Technology, Coimbatore</strong><div class="college-note en">Reputed autonomous engineering college</div><a class="college-link" href="https://www.psgtech.edu" target="_blank">psgtech.edu</a></div></div>
+      <div class="college-card"><div class="college-dot" style="background:var(--green)"></div><div><strong>TNEA — All TN Engineering Admissions</strong><div class="college-note en">500+ colleges via Class 12 marks — no entrance exam</div><a class="college-link" href="https://www.tneaonline.org" target="_blank">tneaonline.org</a></div></div>
+    </div>
+  </div>
+
+  <div class="subsection">
+    <div class="subsection-divider" style="background:var(--navy)"></div>
+    <div class="subsection-title">📝 <span class="en">Key Entrance Exams</span><span class="ta">முக்கிய நுழைவுத் தேர்வுகள்</span></div>
+    <div class="exam-grid">
+      <div class="exam-card"><div class="exam-name">JEE Main</div><div class="exam-full">Joint Entrance Examination</div><div class="exam-for en">NITs, Central Colleges</div><div class="exam-for ta">NIT கல்லூரிகளுக்கு</div><a class="exam-link" href="https://jeemain.nta.nic.in" target="_blank">Apply Here</a></div>
+      <div class="exam-card"><div class="exam-name">JEE Advanced</div><div class="exam-full">For IIT Admissions</div><div class="exam-for en">All 23 IITs in India</div><div class="exam-for ta">IIT கல்லூரிகளுக்கு</div><a class="exam-link" href="https://jeeadv.ac.in" target="_blank">Apply Here</a></div>
+      <div class="exam-card"><div class="exam-name">TNEA</div><div class="exam-full">TN Engineering Admissions</div><div class="exam-for en">500+ TN State Colleges</div><div class="exam-for ta">TN மாநில கல்லூரிகள்</div><a class="exam-link" href="https://www.tneaonline.org" target="_blank">Apply Here</a></div>
+      <div class="exam-card"><div class="exam-name">GATE</div><div class="exam-full">Grad. Aptitude Test in Engg</div><div class="exam-for en">PSU Jobs & PG admission</div><div class="exam-for ta">PSU வேலை & PG சேர்க்கை</div><a class="exam-link" href="https://gate2026.iisc.ac.in" target="_blank">Apply Here</a></div>
+      <div class="exam-card"><div class="exam-name">NATA</div><div class="exam-full">National Aptitude Test in Architecture</div><div class="exam-for en">B.Arch admissions</div><div class="exam-for ta">கட்டிடக்கலை சேர்க்கை</div><a class="exam-link" href="https://www.nata.in" target="_blank">Apply Here</a></div>
+    </div>
+  </div>
+
+  <div class="callout trust">
+    <div class="callout-icon">💛</div>
+    <div>
+      <h4 class="en">AIM REED Trust Can Support You</h4>
+      <h4 class="ta">AIM REED Trust உதவி செய்யும்</h4>
+      <p class="en">Engineering coaching and college fees can be a barrier. AIM REED Trust offers educational support grants to Tamil Nadu students from financially disadvantaged backgrounds. Contact us — don't let money stop your dream.</p>
+      <p class="ta">பொறியியல் கல்வி கட்டணம் தடையாக இருந்தால் AIM REED Trust உதவி மானியம் வழங்குகிறது. தொடர்பு கொள்ளுங்கள்.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- MEDICAL STREAM -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<section class="stream-section" id="s-medical">
+  <div class="stream-banner med-bg">
+    <div class="stream-banner-icon">🏥</div>
+    <div class="stream-banner-text">
+      <h2 class="en">Medical & Allied Health</h2>
+      <h2 class="ta">மருத்துவம் & துணை சுகாதார படிப்புகள்</h2>
+      <div class="ta-sub ta">MBBS, BDS, BAMS, B.Pharm, Nursing & Allied Health</div>
+      <p class="en">Biology students can pursue Medicine, Dentistry, Ayurveda, Pharmacy, Nursing and a wide range of Allied Health Sciences. NEET-UG is mandatory for most.</p>
+      <p class="ta">உயிரியல் மாணவர்களுக்கு மருத்துவம், பல் மருத்துவம், ஆயுர்வேதம், மருந்தியல், செவிலியம் மற்றும் பலவும். பெரும்பாலானவற்றுக்கு NEET தேவை.</p>
+    </div>
+  </div>
+
+  <div class="callout info">
+    <div class="callout-icon">⚠️</div>
+    <div>
+      <h4 class="en">NEET-UG is mandatory for MBBS, BDS, BAMS, BHMS, BUMS</h4>
+      <h4 class="ta">MBBS, BDS, BAMS, BHMS, BUMS — NEET-UG கட்டாயம்</h4>
+      <p class="en">All medical admissions in India require NEET-UG qualification. Apply at <a href="https://neet.nta.nic.in" target="_blank">neet.nta.nic.in</a>. TN medical admissions via <a href="https://tnhealth.tn.gov.in" target="_blank">tnhealth.tn.gov.in</a></p>
+    </div>
+  </div>
+
+  <div class="subsection">
+    <div class="subsection-divider" style="background:var(--rose)"></div>
+    <div class="subsection-title">🏥 <span class="en">Degree Medical Courses</span><span class="ta">மருத்துவ பட்டப்படிப்புகள்</span></div>
+    <div class="course-grid">
+      <div class="course-card"><div class="course-card-header"><div class="course-icon">🩺</div><div><h4>MBBS</h4></div></div><p class="en">5.5 year programme including 1 year internship. Leads to becoming a licensed doctor. NEET required.</p><p class="ta">5.5 ஆண்டு படிப்பு. 1 ஆண்டு இன்டர்ன்ஷிப். NEET தேவை.</p><div class="tag-row"><span class="tag tag-neet">NEET Required</span><span class="tag tag-govt">Govt & Private</span></div></div>
+      <div class="course-card"><div class="course-card-header"><div class="course-icon">🦷</div><div><h4>BDS (Dentistry)</h4></div></div><p class="en">5 year programme. Dental surgery career. NEET required. Good career prospects in urban India.</p><p class="ta">5 ஆண்டு படிப்பு. பல் அறுவை சிகிச்சை. NEET தேவை.</p><div class="tag-row"><span class="tag tag-neet">NEET Required</span></div></div>
+      <div class="course-card"><div class="course-card-header"><div class="course-icon">🌿</div><div><h4>BAMS (Ayurveda)</h4></div></div><p class="en">Bachelor of Ayurvedic Medicine & Surgery. 5.5 years. Traditional Indian medicine system. NEET required.</p><div class="tag-row"><span class="tag tag-neet">NEET Required</span></div></div>
+      <div class="course-card"><div class="course-card-header"><div class="course-icon">🌺</div><div><h4>BHMS (Homeopathy)</h4></div></div><p class="en">Bachelor of Homeopathic Medicine & Surgery. 5.5 years. Growing demand in Tamil Nadu.</p><div class="tag-row"><span class="tag tag-neet">NEET Required</span></div></div>
+      <div class="course-card"><div class="course-card-header"><div class="course-icon">🧘</div><div><h4>BUMS (Unani)</h4></div></div><p class="en">Bachelor of Unani Medicine & Surgery. Islamic traditional medicine. 5.5 years.</p><div class="tag-row"><span class="tag tag-neet">NEET Required</span></div></div>
+      <div class="course-card"><div class="course-card-header"><div class="course-icon">🐄</div><div><h4>B.V.Sc (Veterinary)</h4></div></div><p class="en">Bachelor of Veterinary Science. 5.5 years. Animal healthcare, livestock, and research careers.</p><div class="tag-row"><span class="tag tag-neet">NEET Required</span></div></div>
+      <div class="course-card"><div class="course-card-header"><div class="course-icon">💊</div><div><h4>B.Pharm (Pharmacy)</h4></div></div><p class="en">4 year degree. Drug manufacturing, hospitals, research. Growing industry in Tamil Nadu.</p><p class="ta">4 ஆண்டு படிப்பு. மருந்து உற்பத்தி, மருத்துவமனை, ஆராய்ச்சி.</p><div class="tag-row"><span class="tag tag-govt">Govt & Private</span></div></div>
+      <div class="course-card"><div class="course-card-header"><div class="course-icon">🦿</div><div><h4>BPT (Physiotherapy)</h4></div></div><p class="en">Bachelor of Physiotherapy. 4.5 years. High demand in hospitals, sports clinics and rehabilitation.</p><div class="tag-row"><span class="tag tag-govt">Govt & Private</span></div></div>
+      <div class="course-card"><div class="course-card-header"><div class="course-icon">♿</div><div><h4>BOT (Occupational Therapy)</h4></div></div><p class="en">Bachelor of Occupational Therapy. 4.5 years. Rehabilitation for people with disabilities.</p><div class="tag-row"><span class="tag tag-govt">Govt & Private</span></div></div>
+      <div class="course-card"><div class="course-card-header"><div class="course-icon">🧬</div><div><h4>B.N.Y.S (Naturopathy & Yoga)</h4></div></div><p class="en">5.5 year programme. Natural healing and yoga-based medicine. Good private practice potential.</p><div class="tag-row"><span class="tag tag-govt">Govt & Private</span></div></div>
+    </div>
+  </div>
+
+  <div class="subsection">
+    <div class="subsection-divider" style="background:var(--rose)"></div>
+    <div class="subsection-title">🔬 <span class="en">Allied Health Sciences — B.Sc Programmes</span><span class="ta">துணை சுகாதார அறிவியல் — B.Sc படிப்புகள்</span></div>
+    <div class="course-list">
+      <div class="course-list-item">B.Sc. Nursing</div>
+      <div class="course-list-item">B.Sc. Audiology & Speech Language Pathology</div>
+      <div class="course-list-item">B.Sc. Medical Lab Technology</div>
+      <div class="course-list-item">B.Sc. Radiology & Imaging Technology</div>
+      <div class="course-list-item">B.Sc. Operation Theatre & Anaesthesia Tech</div>
+      <div class="course-list-item">B.Sc. Critical Care Technology</div>
+      <div class="course-list-item">B.Sc. Accident Emergency Care Technology</div>
+      <div class="course-list-item">B.Sc. Optometry Technology</div>
+      <div class="course-list-item">B.Sc. Dialysis Technology</div>
+      <div class="course-list-item">B.Sc. Prosthetics & Orthotics Technology</div>
+      <div class="course-list-item">B.Sc. Cardio Vascular Technology</div>
+      <div class="course-list-item">B.Sc. Physiology</div>
+      <div class="course-list-item">B.Sc. Diabetic Science</div>
+    </div>
+  </div>
+
+  <div class="subsection">
+    <div class="subsection-divider" style="background:var(--rose)"></div>
+    <div class="subsection-title">📋 <span class="en">Allied Health — Diploma Programmes</span><span class="ta">டிப்ளோமா படிப்புகள்</span></div>
+    <div class="course-list">
+      <div class="course-list-item">Diploma — Ophthalmic Nursing Assistant</div>
+      <div class="course-list-item">Diploma — Paediatric Technician</div>
+      <div class="course-list-item">Diploma — Medical Record Science</div>
+      <div class="course-list-item">Diploma — Dental Hygienist</div>
+      <div class="course-list-item">Diploma — Dental Mechanics</div>
+      <div class="course-list-item">D.Pharm / DPT / DNSM</div>
+      <div class="course-list-item">Diploma — Public Health</div>
+      <div class="course-list-item">Certificate — EEG Technician</div>
+      <div class="course-list-item">Certificate — ECG Technician</div>
+      <div class="course-list-item">Certificate — X-ray Technician</div>
+      <div class="course-list-item">Certificate — Operation Theatre Technician</div>
+      <div class="course-list-item">Certificate — Dialysis Technician</div>
+      <div class="course-list-item">Certificate — Anaesthesia Technician</div>
+    </div>
+  </div>
+
+  <div class="subsection">
+    <div class="subsection-divider" style="background:var(--rose)"></div>
+    <div class="subsection-title">🏛️ <span class="en">Key Institutions</span><span class="ta">முக்கிய நிறுவனங்கள்</span></div>
+    <div class="college-grid">
+      <div class="college-card"><div class="college-dot" style="background:var(--rose)"></div><div><strong>Madras Medical College, Chennai</strong><div class="college-note en">TN's premier govt medical college — NEET</div><a class="college-link" href="https://www.mmc.ac.in" target="_blank">mmc.ac.in</a></div></div>
+      <div class="college-card"><div class="college-dot" style="background:#9B1C1C"></div><div><strong>TN Medical Admissions (DME)</strong><div class="college-note en">Official TN medical seat allotment portal</div><a class="college-link" href="https://tnhealth.tn.gov.in" target="_blank">tnhealth.tn.gov.in</a></div></div>
+      <div class="college-card"><div class="college-dot" style="background:var(--saffron)"></div><div><strong>NEET-UG — NTA Official Portal</strong><div class="college-note en">Register and apply for NEET here</div><a class="college-link" href="https://neet.nta.nic.in" target="_blank">neet.nta.nic.in</a></div></div>
+    </div>
+  </div>
+  <div class="callout trust"><div class="callout-icon">💛</div><div><h4 class="en">AIM REED Trust — Medical Dream Support</h4><h4 class="ta">மருத்துவ கனவை நனவாக்க AIM REED Trust</h4><p class="en">NEET coaching is expensive. AIM REED Trust helps deserving students from Tamil Nadu access the support they need to pursue medical education. Reach out to us.</p><p class="ta">NEET பயிற்சி கட்டணம் அதிகம். AIM REED Trust தகுதியான மாணவர்களுக்கு உதவுகிறது.</p></div></div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- SCIENCE STREAM -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<section class="stream-section" id="s-science">
+  <div class="stream-banner sci-bg">
+    <div class="stream-banner-icon">🔬</div>
+    <div class="stream-banner-text">
+      <h2 class="en">Bachelor of Science (B.Sc)</h2>
+      <h2 class="ta">அறிவியல் பட்டப்படிப்பு</h2>
+      <div class="ta-sub ta">3 Year Degree — Gateway to Research, Teaching & PG Studies</div>
+      <p class="en">Open to both PCM and PCB students. B.Sc leads to research, teaching, government jobs and postgraduate studies. Many subjects available.</p>
+    </div>
+  </div>
+  <div class="subsection">
+    <div class="subsection-divider" style="background:var(--teal)"></div>
+    <div class="subsection-title">🔬 <span class="en">B.Sc Subject Options</span><span class="ta">B.Sc பாடத் தேர்வுகள்</span></div>
+    <div class="callout info"><div class="callout-icon">🔗</div><div><h4 class="en">UGC Approved Programmes</h4><p class="en">All B.Sc programmes are UGC-approved. See <a href="https://www.ugc.gov.in" target="_blank">ugc.gov.in</a> for the full list of recognised universities and programmes. TN collegiate admissions: <a href="https://www.tndce.tn.gov.in" target="_blank">tndce.tn.gov.in</a></p></div></div>
+    <div class="course-list">
+      <div class="course-list-item">B.Sc. Physics</div>
+      <div class="course-list-item">B.Sc. Chemistry</div>
+      <div class="course-list-item">B.Sc. Mathematics</div>
+      <div class="course-list-item">B.Sc. Biology / Botany / Zoology</div>
+      <div class="course-list-item">B.Sc. Computer Science</div>
+      <div class="course-list-item">B.Sc. Statistics</div>
+      <div class="course-list-item">B.Sc. Electronics & Communication</div>
+      <div class="course-list-item">B.Sc. Microbiology</div>
+      <div class="course-list-item">B.Sc. Biochemistry</div>
+      <div class="course-list-item">B.Sc. Biotechnology</div>
+      <div class="course-list-item">B.Sc. Computer Application</div>
+      <div class="course-list-item">B.Sc. Information Technology</div>
+      <div class="course-list-item">B.Sc. Visual Communication</div>
+      <div class="course-list-item">B.Sc. Nutrition & Dietetics</div>
+      <div class="course-list-item">B.Sc. Clinical Nutrition & Dietetics</div>
+      <div class="course-list-item">B.Sc. Food Science & Nutrition</div>
+      <div class="course-list-item">B.Sc. Home Science</div>
+      <div class="course-list-item">B.Sc. Geography</div>
+      <div class="course-list-item">B.Sc. Geology</div>
+      <div class="course-list-item">B.Sc. Industrial Electronics</div>
+      <div class="course-list-item">B.Sc. Software Applications</div>
+      <div class="course-list-item">B.Sc. Yoga & Naturopathy</div>
+      <div class="course-list-item">B.Sc. Forestry</div>
+      <div class="course-list-item">B.Sc. Oceanography</div>
+      <div class="course-list-item">B.Sc. Forensic Science</div>
+      <div class="course-list-item">B.Sc. Food Technology</div>
+      <div class="course-list-item">B.Sc. Dairy Technology</div>
+      <div class="course-list-item">B.Sc. Exercise Physiology & Nutrition</div>
+      <div class="course-list-item">B.Sc. Sports Bio Mechanics & Kinesiology</div>
+      <div class="course-list-item">B.Sc. Sports Coaching</div>
+      <div class="course-list-item">B.Sc. Mobility Science</div>
+      <div class="course-list-item">B.Sc. Animation & Technology</div>
+      <div class="course-list-item">B.Sc. 3D Animation</div>
+    </div>
+  </div>
+  <div class="subsection">
+    <div class="subsection-divider" style="background:var(--teal)"></div>
+    <div class="subsection-title">🎓 <span class="en">Integrated B.S – M.S / M.Sc Programmes</span></div>
+    <div class="course-list">
+      <div class="course-list-item">Integrated M.S./M.Sc. — Applied Physics</div>
+      <div class="course-list-item">Integrated M.S./M.Sc. — Mathematics</div>
+      <div class="course-list-item">Integrated M.S./M.Sc. — Chemistry</div>
+      <div class="course-list-item">Integrated M.S./M.Sc. — Computer Science</div>
+      <div class="course-list-item">Integrated M.S./M.Sc. — Information Technology</div>
+      <div class="course-list-item">Integrated M.S./M.Sc. — Bio Informatics</div>
+      <div class="course-list-item">Integrated M.S./M.Sc. — Biotechnology</div>
+      <div class="course-list-item">Integrated M.S./M.Sc. — Agri Business Management</div>
+    </div>
+  </div>
+  <div class="subsection">
+    <div class="subsection-divider" style="background:var(--teal)"></div>
+    <div class="subsection-title">🎭 <span class="en">Physical Education Courses</span><span class="ta">உடல் கல்வி படிப்புகள்</span></div>
+    <div class="callout info"><div class="callout-icon">🔗</div><div><p class="en">For Physical Education admissions in TN: <a href="https://www.tnpesu.org" target="_blank">tnpesu.org</a></p></div></div>
+    <div class="course-list">
+      <div class="course-list-item">C.P.Ed (Certificate in Physical Education)</div>
+      <div class="course-list-item">B.P.Ed (Bachelor of Physical Education)</div>
+      <div class="course-list-item">B.P.E.S (Bachelor of Physical Education & Sports)</div>
+      <div class="course-list-item">B.Sc. Yoga</div>
+      <div class="course-list-item">B.Sc. Physical Education</div>
+      <div class="course-list-item">Diploma in Physical Education</div>
+    </div>
+  </div>
+  <div class="subsection">
+    <div class="subsection-divider" style="background:var(--teal)"></div>
+    <div class="subsection-title">🎵 <span class="en">Music, Fine Arts & Media</span><span class="ta">இசை, நுண்கலை & ஊடகம்</span></div>
+    <div class="callout info"><div class="callout-icon">🔗</div><div><p class="en">Tamil Nadu Fine Arts University: <a href="https://tnjjmfau.in" target="_blank">tnjjmfau.in</a> | Mass Communication: Many colleges</p></div></div>
+    <div class="course-list">
+      <div class="course-list-item">BA Music</div>
+      <div class="course-list-item">BA Dance (Bharatanatyam)</div>
+      <div class="course-list-item">Industrial Design — Ceramics / Textiles</div>
+      <div class="course-list-item">Visual Communication Design / Painting / Sculpture</div>
+      <div class="course-list-item">B.A. Mass Communication</div>
+      <div class="course-list-item">B.A. Journalism</div>
+      <div class="course-list-item">B.Sc. Animation & Technology</div>
+      <div class="course-list-item">B.A. Animation & Multimedia</div>
+      <div class="course-list-item">Diploma — Sound Recording & Sound Engineering</div>
+      <div class="course-list-item">Diploma — Cinematography / Film Editing</div>
+      <div class="course-list-item">Diploma — Animation</div>
+    </div>
+  </div>
+  <div class="subsection">
+    <div class="subsection-divider" style="background:var(--teal)"></div>
+    <div class="subsection-title">📝 <span class="en">Key Exams</span></div>
+    <div class="exam-grid">
+      <div class="exam-card"><div class="exam-name">CUET</div><div class="exam-full">Central University Entrance Test</div><div class="exam-for en">Central university UG admissions</div><a class="exam-link" href="https://cuet.nta.nic.in" target="_blank">Apply Here</a></div>
+      <div class="exam-card"><div class="exam-name">IIT JAM</div><div class="exam-full">Joint Admission Test — MSc</div><div class="exam-for en">IIT MSc programmes</div><a class="exam-link" href="https://jam.iitd.ac.in" target="_blank">Apply Here</a></div>
+      <div class="exam-card"><div class="exam-name">TNDCE Portal</div><div class="exam-full">TN Arts & Science Admissions</div><div class="exam-for en">Govt arts & science colleges, TN</div><a class="exam-link" href="https://www.tndce.tn.gov.in" target="_blank">Visit</a></div>
+    </div>
+  </div>
+  <div class="callout trust"><div class="callout-icon">💛</div><div><h4 class="en">AIM REED Trust Can Help</h4><h4 class="ta">AIM REED Trust உதவி செய்யும்</h4><p class="en">B.Sc students from low-income families in Tamil Nadu can approach AIM REED Trust for educational support grants to cover fees, books, and essentials.</p></div></div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- ARTS STREAM -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<section class="stream-section" id="s-arts">
+  <div class="stream-banner arts-bg">
+    <div class="stream-banner-icon">🎨</div>
+    <div class="stream-banner-text">
+      <h2 class="en">Arts & Humanities (B.A)</h2>
+      <h2 class="ta">கலை & மனிதவியல் பட்டப்படிப்பு</h2>
+      <div class="ta-sub ta">Gateway to Civil Services, Law, Media, Education & Social Work</div>
+      <p class="en">Arts graduates have the highest success rates in UPSC civil services. Languages, social sciences, humanities — all lead to respected careers.</p>
+    </div>
+  </div>
+  <div class="callout info"><div class="callout-icon">🔗</div><div><h4 class="en">UGC — University Grants Commission</h4><p class="en">All B.A programmes are UGC-regulated. See <a href="https://www.ugc.gov.in" target="_blank">ugc.gov.in</a> for recognised universities.</p></div></div>
+  <div class="subsection">
+    <div class="subsection-divider" style="background:var(--violet)"></div>
+    <div class="subsection-title">📚 <span class="en">Bachelor of Arts (B.A) Subjects</span><span class="ta">B.A பாடங்கள்</span></div>
+    <div class="course-list">
+      <div class="course-list-item">B.A. Economics</div>
+      <div class="course-list-item">B.A. English</div>
+      <div class="course-list-item">B.A. History</div>
+      <div class="course-list-item">B.A. Political Science</div>
+      <div class="course-list-item">B.A. Psychology</div>
+      <div class="course-list-item">B.A. Sociology</div>
+      <div class="course-list-item">B.A. Public Administration</div>
+      <div class="course-list-item">B.A. Geography</div>
+      <div class="course-list-item">B.A. Human Rights</div>
+      <div class="course-list-item">B.A. Event Management</div>
+      <div class="course-list-item">B.A. Hindi / Sanskrit / Arabic</div>
+      <div class="course-list-item">B.A. Social Work</div>
+      <div class="course-list-item">B.A. Archaeology / Epigraphy</div>
+      <div class="course-list-item">B.A. Astrology / Philosophy</div>
+      <div class="course-list-item">B.A. Art History</div>
+      <div class="course-list-item">B.A. International Relations</div>
+      <div class="course-list-item">B.A. Culture and Archaeology</div>
+      <div class="course-list-item">B.A. Economics & Rural Development</div>
+    </div>
+  </div>
+  <div class="subsection">
+    <div class="subsection-divider" style="background:var(--violet)"></div>
+    <div class="subsection-title">🌍 <span class="en">Foreign Languages</span><span class="ta">வெளிநாட்டு மொழிகள்</span></div>
+    <div class="course-list">
+      <div class="course-list-item">B.A. Spanish</div>
+      <div class="course-list-item">B.A. French</div>
+      <div class="course-list-item">B.A. German</div>
+      <div class="course-list-item">B.A. Russian</div>
+      <div class="course-list-item">B.A. Arabic</div>
+    </div>
+  </div>
+  <div class="subsection">
+    <div class="subsection-divider" style="background:var(--violet)"></div>
+    <div class="subsection-title">👩‍🏫 <span class="en">Teacher Education</span><span class="ta">ஆசிரியர் கல்வி</span></div>
+    <div class="callout info"><div class="callout-icon">🔗</div><div><p class="en">Tamil Nadu Teachers Education University: <a href="https://www.tnteu.ac.in" target="_blank">tnteu.ac.in</a> | For Govt Teaching Jobs: <a href="https://trb.tn.gov.in" target="_blank">trb.tn.gov.in</a></p></div></div>
+    <div class="course-list">
+      <div class="course-list-item">B.Ed (General)</div>
+      <div class="course-list-item">B.Ed (Special Education)</div>
+      <div class="course-list-item">Integrated Teachers Education Programme (ITEP)</div>
+      <div class="course-list-item">D.T.Ed (Diploma in Teacher Education)</div>
+      <div class="course-list-item">Diploma in Special Education (Blind / Deaf / M.R)</div>
+    </div>
+  </div>
+  <div class="subsection">
+    <div class="subsection-divider" style="background:var(--violet)"></div>
+    <div class="subsection-title">🏛️ <span class="en">Top Colleges</span></div>
+    <div class="college-grid">
+      <div class="college-card"><div class="college-dot" style="background:var(--violet)"></div><div><strong>Loyola College, Chennai</strong><div class="college-note">Premier autonomous arts & science college</div><a class="college-link" href="https://www.loyolacollege.edu" target="_blank">loyolacollege.edu</a></div></div>
+      <div class="college-card"><div class="college-dot" style="background:#7B59B6"></div><div><strong>Madras Christian College (MCC)</strong><div class="college-note">Strong humanities & science departments</div><a class="college-link" href="https://www.mcc.edu.in" target="_blank">mcc.edu.in</a></div></div>
+      <div class="college-card"><div class="college-dot" style="background:#5B2C8D"></div><div><strong>Stella Maris College, Chennai</strong><div class="college-note">Top women's college for humanities</div><a class="college-link" href="https://www.stellamariscollege.edu.in" target="_blank">stellamariscollege.edu.in</a></div></div>
+      <div class="college-card"><div class="college-dot" style="background:var(--saffron)"></div><div><strong>TN Collegiate Education Portal</strong><div class="college-note">All govt arts & science college admissions</div><a class="college-link" href="https://www.tndce.tn.gov.in" target="_blank">tndce.tn.gov.in</a></div></div>
+    </div>
+  </div>
+  <div class="subsection">
+    <div class="subsection-divider" style="background:var(--violet)"></div>
+    <div class="subsection-title">📝 <span class="en">Key Exams</span></div>
+    <div class="exam-grid">
+      <div class="exam-card"><div class="exam-name">UPSC</div><div class="exam-full">Civil Services — IAS, IPS, IFS</div><div class="exam-for en">Central Govt top jobs</div><a class="exam-link" href="https://upsc.gov.in" target="_blank">upsc.gov.in</a></div>
+      <div class="exam-card"><div class="exam-name">TNPSC</div><div class="exam-full">TN Public Service Commission</div><div class="exam-for en">Group 1, 2, 4, CCSE</div><a class="exam-link" href="https://www.tnpsc.gov.in" target="_blank">tnpsc.gov.in</a></div>
+      <div class="exam-card"><div class="exam-name">CUET</div><div class="exam-full">Central University Entrance</div><div class="exam-for en">Central university UG admissions</div><a class="exam-link" href="https://cuet.nta.nic.in" target="_blank">Apply Here</a></div>
+      <div class="exam-card"><div class="exam-name">TRB / TET</div><div class="exam-full">Teacher Recruitment Board</div><div class="exam-for en">TN Govt school teaching</div><a class="exam-link" href="https://trb.tn.gov.in" target="_blank">trb.tn.gov.in</a></div>
+    </div>
+  </div>
+  <div class="callout trust"><div class="callout-icon">💛</div><div><h4 class="en">AIM REED Trust Can Help</h4><p class="en">Arts students from financially disadvantaged backgrounds in Tamil Nadu — AIM REED Trust can support your education journey. Contact us today.</p></div></div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- COMMERCE STREAM -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<section class="stream-section" id="s-commerce">
+  <div class="stream-banner comm-bg">
+    <div class="stream-banner-icon">📊</div>
+    <div class="stream-banner-text">
+      <h2 class="en">Commerce & Business</h2>
+      <h2 class="ta">வணிகம் & வியாபார படிப்புகள்</h2>
+      <div class="ta-sub ta">B.Com, BBA, CA, CMA, CS — Finance, Banking & Entrepreneurship</div>
+      <p class="en">Commerce opens doors to Chartered Accountancy, banking, finance, corporate law, and business leadership. CA is one of India's most respected qualifications.</p>
+    </div>
+  </div>
+  <div class="subsection">
+    <div class="subsection-divider" style="background:var(--green)"></div>
+    <div class="subsection-title">💼 <span class="en">Professional Qualifications</span><span class="ta">தொழில்முறை தகுதிகள்</span></div>
+    <div class="course-grid">
+      <div class="course-card"><div class="course-card-header"><div class="course-icon">📋</div><div><h4>Chartered Accountancy (CA)</h4></div></div><p class="en">Start CA Foundation after 12th. One of India's most respected qualifications. ICAI governed.</p><p class="ta">12க்கு பிறகு CA Foundation. மிகவும் மதிக்கப்படும் தகுதி.</p><div class="tag-row"><span class="tag tag-skill">Register After 12th</span></div></div>
+      <div class="course-card"><div class="course-card-header"><div class="course-icon">💹</div><div><h4>Cost Management Accountant (CMA)</h4><div class="ta-name">Previously ICWA</div></div></div><p class="en">Cost & management accounting. Strong career in manufacturing, banking, and government sectors.</p><div class="tag-row"><span class="tag tag-skill">Professional Exam</span></div></div>
+      <div class="course-card"><div class="course-card-header"><div class="course-icon">📜</div><div><h4>Company Secretaryship (CS)</h4></div></div><p class="en">Corporate governance and law. Growing demand in all listed companies in India.</p><div class="tag-row"><span class="tag tag-skill">Professional Exam</span></div></div>
+      <div class="course-card"><div class="course-card-header"><div class="course-icon">🧮</div><div><h4>Actuarial Science</h4></div></div><p class="en">Insurance mathematics — one of the highest-paid professions globally. Strong maths needed.</p><div class="tag-row"><span class="tag tag-private">Specialist Field</span></div></div>
+    </div>
+  </div>
+  <div class="subsection">
+    <div class="subsection-divider" style="background:var(--green)"></div>
+    <div class="subsection-title">🎓 <span class="en">Degree Courses — B.Com / BBA / BCS</span></div>
+    <div class="course-list">
+      <div class="course-list-item">B.Com — Accounting & Finance</div>
+      <div class="course-list-item">B.Com — Business Administration</div>
+      <div class="course-list-item">B.Com — Commerce & CA</div>
+      <div class="course-list-item">B.Com — Co-operation</div>
+      <div class="course-list-item">B.Com — Corporate Secretaryship</div>
+      <div class="course-list-item">B.Com — International Accounting & Auditing</div>
+      <div class="course-list-item">BBA — Financial Planning</div>
+      <div class="course-list-item">BCA — Big Data Analytics</div>
+      <div class="course-list-item">BCA — Digital Technology</div>
+    </div>
+  </div>
+  <div class="subsection">
+    <div class="subsection-divider" style="background:var(--green)"></div>
+    <div class="subsection-title">🏨 <span class="en">Hospitality, Tourism & Management</span></div>
+    <div class="course-list">
+      <div class="course-list-item">Logistics & Management</div>
+      <div class="course-list-item">Travel & Tourism Management</div>
+      <div class="course-list-item">Marketing Management</div>
+      <div class="course-list-item">Retail Management</div>
+      <div class="course-list-item">Bachelor of Hotel Management</div>
+      <div class="course-list-item">B.Sc. Catering Science & Hotel Management</div>
+      <div class="course-list-item">Hotel Management & Tourism</div>
+      <div class="course-list-item">Sports Management</div>
+    </div>
+  </div>
+  <div class="subsection">
+    <div class="subsection-divider" style="background:var(--green)"></div>
+    <div class="subsection-title">🏛️ <span class="en">Degree Management Courses</span></div>
+    <div class="course-list">
+      <div class="course-list-item">Financial Management</div>
+      <div class="course-list-item">Business Management</div>
+      <div class="course-list-item">Bank Management</div>
+      <div class="course-list-item">Event Management</div>
+    </div>
+  </div>
+  <div class="subsection">
+    <div class="subsection-divider" style="background:var(--green)"></div>
+    <div class="subsection-title">📝 <span class="en">Key Exams</span></div>
+    <div class="exam-grid">
+      <div class="exam-card"><div class="exam-name">CA Foundation</div><div class="exam-full">Institute of Chartered Accountants</div><div class="exam-for en">Register at ICAI after 12th</div><a class="exam-link" href="https://www.icai.org" target="_blank">icai.org</a></div>
+      <div class="exam-card"><div class="exam-name">CUET</div><div class="exam-full">Central University Entrance</div><div class="exam-for en">B.Com at central universities</div><a class="exam-link" href="https://cuet.nta.nic.in" target="_blank">Apply Here</a></div>
+      <div class="exam-card"><div class="exam-name">IPM — IIM</div><div class="exam-full">Integrated Programme — BBA+MBA</div><div class="exam-for en">5-year programme at IIMs</div><a class="exam-link" href="https://www.iimcat.ac.in" target="_blank">iimcat.ac.in</a></div>
+      <div class="exam-card"><div class="exam-name">IBPS</div><div class="exam-full">Banking Sector Exams</div><div class="exam-for en">PO, Clerk, Specialist</div><a class="exam-link" href="https://www.ibps.in" target="_blank">ibps.in</a></div>
+      <div class="exam-card"><div class="exam-name">NCHMJEE</div><div class="exam-full">Hotel Management Entrance</div><div class="exam-for en">IHM & hotel colleges</div><a class="exam-link" href="https://www.nta.ac.in" target="_blank">nta.ac.in</a></div>
+    </div>
+  </div>
+  <div class="callout trust"><div class="callout-icon">💛</div><div><h4 class="en">AIM REED Trust Can Help</h4><p class="en">CA coaching, college fees, and study materials — AIM REED Trust supports commerce students from Tamil Nadu who face financial barriers.</p></div></div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- AGRICULTURE STREAM -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<section class="stream-section" id="s-agriculture">
+  <div class="stream-banner agri-bg">
+    <div class="stream-banner-icon">🌾</div>
+    <div class="stream-banner-text">
+      <h2 class="en">Agriculture, Fisheries & Food Science</h2>
+      <h2 class="ta">வேளாண்மை, மீன்வளம் & உணவு அறிவியல்</h2>
+      <div class="ta-sub ta">Strong govt sector jobs — Tamil Nadu Agriculture University (TNAU)</div>
+      <p class="en">Tamil Nadu has one of India's strongest agricultural education systems. Good government job prospects through TNPSC and central services.</p>
+    </div>
+  </div>
+  <div class="callout info"><div class="callout-icon">🔗</div><div><h4>Key Institutions</h4><p>TNAU: <a href="https://www.tnau.ac.in" target="_blank">tnau.ac.in</a> | Tamil Nadu Fisheries University: <a href="https://www.tnjfu.ac.in" target="_blank">tnjfu.ac.in</a></p></div></div>
+  <div class="subsection">
+    <div class="subsection-divider" style="background:#4A7A1E"></div>
+    <div class="subsection-title">🌱 <span class="en">Degree Courses</span></div>
+    <div class="course-list">
+      <div class="course-list-item">B.Sc. Agriculture</div>
+      <div class="course-list-item">B.Sc. Horticulture</div>
+      <div class="course-list-item">B.Sc. Sericulture</div>
+      <div class="course-list-item">B.Sc. Forestry</div>
+      <div class="course-list-item">B.Tech. Horticulture</div>
+      <div class="course-list-item">B.F.Sc. Fisheries</div>
+      <div class="course-list-item">B.Sc. Aquaculture</div>
+      <div class="course-list-item">B.Tech. Dairy Technology</div>
+      <div class="course-list-item">B.Tech. Poultry Production Technology</div>
+      <div class="course-list-item">B.B.A. Fisheries Business Management</div>
+      <div class="course-list-item">B.Voc. Aquaculture</div>
+      <div class="course-list-item">B.Voc. Industrial Fishing Technology</div>
+      <div class="course-list-item">B.Voc. Aquatic Animal Health Management</div>
+    </div>
+  </div>
+  <div class="subsection">
+    <div class="subsection-divider" style="background:#4A7A1E"></div>
+    <div class="subsection-title">📋 <span class="en">One-Year Diploma Programmes</span><span class="ta">ஓராண்டு டிப்ளோமா படிப்புகள்</span></div>
+    <div class="course-list">
+      <div class="course-list-item">Diploma in Farm Technology</div>
+      <div class="course-list-item">Diploma in Horticultural Technologies</div>
+      <div class="course-list-item">Diploma in Farm Machinery & its Maintenance</div>
+      <div class="course-list-item">Diploma in Quality Control in Agri-Warehousing</div>
+      <div class="course-list-item">Diploma in Herbal Science</div>
+      <div class="course-list-item">Diploma in Coconut Production Technology</div>
+      <div class="course-list-item">Diploma in Sugarcane Technology</div>
+      <div class="course-list-item">Diploma in Organic Agriculture</div>
+      <div class="course-list-item">Diploma in Production of Bio-fertilizers & Bio-control Agents</div>
+      <div class="course-list-item">Diploma in Food Science & Processing</div>
+      <div class="course-list-item">Diploma in Tea Plantation Management</div>
+      <div class="course-list-item">Diploma in Protected Cultivation Technology</div>
+      <div class="course-list-item">Diploma in Hydroponics for Horticultural Crops</div>
+      <div class="course-list-item">Diploma in Smart Farming</div>
+      <div class="course-list-item">Diploma in Drone Technology in Agriculture</div>
+    </div>
+  </div>
+  <div class="callout tip"><div class="callout-icon">🌟</div><div><h4 class="en">Drone Technology in Agriculture — New & High Demand!</h4><p class="en">Agriculture drone technology is one of the fastest-growing fields in India. TN students with this qualification are in high demand for agri-tech companies and govt schemes.</p></div></div>
+  <div class="callout trust"><div class="callout-icon">💛</div><div><h4>AIM REED Trust Can Help</h4><p>Rural Tamil Nadu students pursuing agriculture education can contact AIM REED Trust for financial support grants.</p></div></div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- LAW STREAM -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<section class="stream-section" id="s-law">
+  <div class="stream-banner law-bg">
+    <div class="stream-banner-icon">⚖️</div>
+    <div class="stream-banner-text">
+      <h2 class="en">Law Courses</h2>
+      <h2 class="ta">சட்டப் படிப்புகள்</h2>
+      <div class="ta-sub ta">CLAT — National Law Universities | TNDALU — Tamil Nadu</div>
+      <p class="en">Law offers careers in courts, corporate firms, civil services, public sector legal roles, judiciary, and independent practice.</p>
+    </div>
+  </div>
+  <div class="callout info"><div class="callout-icon">🔗</div><div><h4>TN Law Colleges — Affiliated to TNDALU</h4><p>See all affiliated law colleges in Tamil Nadu: <a href="https://tndalu.ac.in/Affili-Clg.php" target="_blank">tndalu.ac.in/Affili-Clg.php</a></p></div></div>
+  <div class="subsection">
+    <div class="subsection-divider" style="background:#8B2500"></div>
+    <div class="subsection-title">⚖️ <span class="en">Law Degree Programmes</span><span class="ta">சட்டப் படிப்புகள்</span></div>
+    <div class="course-list">
+      <div class="course-list-item">B.B.A. LLB & B.B.A. LLB (Hons) — 5 Years</div>
+      <div class="course-list-item">B.Sc. LLB & B.Sc. LLB (Hons) — 5 Years</div>
+      <div class="course-list-item">B.Com. LLB & B.Com. LLB (Hons) — 5 Years</div>
+      <div class="course-list-item">LLB & LLB (Hons) — 3 Years (After Graduation)</div>
+      <div class="course-list-item">LLM — Master of Laws</div>
+      <div class="course-list-item">LLD — Doctor of Laws</div>
+    </div>
+  </div>
+  <div class="subsection">
+    <div class="subsection-divider" style="background:#8B2500"></div>
+    <div class="subsection-title">🏛️ <span class="en">Government Jobs for Law Graduates</span><span class="ta">சட்டப் பட்டதாரிகளுக்கு அரசு வேலைகள்</span></div>
+    <div class="govt-grid">
+      <div class="govt-card"><h4>Judicial Service Examination</h4><p>Civil Judge (Junior Division) and District Judge positions in Tamil Nadu courts.</p><a href="https://www.tnpsc.gov.in" target="_blank">tnpsc.gov.in</a></div>
+      <div class="govt-card"><h4>RBI Legal Officer (Grade B)</h4><p>Legal roles in the Reserve Bank of India. Competitive exam.</p><a href="https://rbi.org.in" target="_blank">rbi.org.in</a></div>
+      <div class="govt-card"><h4>SEBI Grade A Legal Officer</h4><p>Securities and Exchange Board of India — legal officer roles.</p><a href="https://www.sebi.gov.in" target="_blank">sebi.gov.in</a></div>
+      <div class="govt-card"><h4>Judge Advocate General (JAG) — Navy</h4><p>Legal officer in Indian Navy — for law graduates.</p><a href="https://www.joinindiannavy.gov.in" target="_blank">joinindiannavy.gov.in</a></div>
+      <div class="govt-card"><h4>IBPS Law Officer / Specialist Officer</h4><p>Banking sector legal specialist officer roles across PSU banks.</p><a href="https://www.ibps.in" target="_blank">ibps.in</a></div>
+      <div class="govt-card"><h4>RBI Legal Consultant (Grade C/D/F)</h4><p>Senior legal consultant roles at RBI.</p><a href="https://rbi.org.in" target="_blank">rbi.org.in</a></div>
+    </div>
+  </div>
+  <div class="subsection">
+    <div class="subsection-divider" style="background:#8B2500"></div>
+    <div class="subsection-title">📝 <span class="en">Key Entrance Exams</span></div>
+    <div class="exam-grid">
+      <div class="exam-card"><div class="exam-name">CLAT</div><div class="exam-full">Common Law Admission Test</div><div class="exam-for en">All National Law Universities</div><a class="exam-link" href="https://consortiumofnlus.ac.in" target="_blank">Apply Here</a></div>
+      <div class="exam-card"><div class="exam-name">TNDALU</div><div class="exam-full">TN Dr. Ambedkar Law University</div><div class="exam-for en">TN State Law Colleges</div><a class="exam-link" href="https://tndalu.ac.in" target="_blank">tndalu.ac.in</a></div>
+      <div class="exam-card"><div class="exam-name">CUET Law</div><div class="exam-full">Central University Entrance</div><div class="exam-for en">Central university law admissions</div><a class="exam-link" href="https://cuet.nta.nic.in" target="_blank">Apply Here</a></div>
+    </div>
+  </div>
+  <div class="callout trust"><div class="callout-icon">💛</div><div><h4>AIM REED Trust Can Help</h4><p>Law education costs can be significant. Deserving Tamil Nadu students can approach AIM REED Trust for educational support to pursue their legal career.</p></div></div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- VOCATIONAL & DIPLOMA -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<section class="stream-section" id="s-vocational">
+  <div class="stream-banner voc-bg">
+    <div class="stream-banner-icon">🔧</div>
+    <div class="stream-banner-text">
+      <h2 class="en">Vocational, Diploma & Skill Courses</h2>
+      <h2 class="ta">தொழிற்கல்வி, டிப்ளோமா & திறன் படிப்புகள்</h2>
+      <div class="ta-sub ta">Fast employment — Polytechnic, ITI, Certificate & Skill India</div>
+      <p class="en">Skill-based education gets you job-ready faster. Polytechnic diplomas allow lateral entry to engineering degrees. Many courses are free or subsidised.</p>
+    </div>
+  </div>
+  <div class="subsection">
+    <div class="subsection-divider" style="background:var(--rose)"></div>
+    <div class="subsection-title">🎓 <span class="en">Designing & Creative Courses</span><span class="ta">வடிவமைப்பு & படைப்பாற்றல் படிப்புகள்</span></div>
+    <div class="callout info"><div class="callout-icon">🔗</div><div><p>NIFT Entrance: <a href="https://www.nift.ac.in" target="_blank">nift.ac.in</a></p></div></div>
+    <div class="course-list">
+      <div class="course-list-item">Fashion Design</div>
+      <div class="course-list-item">Leather Design</div>
+      <div class="course-list-item">Textile and Footwear Design</div>
+      <div class="course-list-item">Animation Film Design</div>
+      <div class="course-list-item">Ceramic Glass Design</div>
+      <div class="course-list-item">Graphic Design</div>
+      <div class="course-list-item">Furniture and Interior Design</div>
+    </div>
+  </div>
+  <div class="subsection">
+    <div class="subsection-divider" style="background:var(--rose)"></div>
+    <div class="subsection-title">🛠️ <span class="en">ITI — Industrial Training Institute Courses</span><span class="ta">ITI தொழிற்பயிற்சி படிப்புகள்</span></div>
+    <div class="callout info"><div class="callout-icon">🔗</div><div><p>TN Directorate of Employment: <a href="https://www.dge.tn.gov.in" target="_blank">dge.tn.gov.in</a> | 200+ Govt ITI centres in TN — free or subsidised</p></div></div>
+    <div class="course-list">
+      <div class="course-list-item">Electrician (1–2 years)</div>
+      <div class="course-list-item">Fitter (2 years)</div>
+      <div class="course-list-item">Welder (1 year)</div>
+      <div class="course-list-item">Machinist (2 years)</div>
+      <div class="course-list-item">COPA — Computer Operator & Programming Assistant</div>
+      <div class="course-list-item">Refrigeration & AC Technician</div>
+      <div class="course-list-item">Vehicle Mechanic</div>
+      <div class="course-list-item">General Duty Assistant</div>
+    </div>
+  </div>
+  <div class="subsection">
+    <div class="subsection-divider" style="background:var(--rose)"></div>
+    <div class="subsection-title">📜 <span class="en">Vocational Diploma Programmes (TNOU)</span></div>
+    <div class="callout info"><div class="callout-icon">🔗</div><div><p>Tamil Nadu Open University: <a href="https://tnou.ac.in" target="_blank">tnou.ac.in</a></p></div></div>
+    <div class="course-list">
+      <div class="course-list-item">General Duty Assistant</div>
+      <div class="course-list-item">Refrigeration & AC</div>
+      <div class="course-list-item">Technician</div>
+      <div class="course-list-item">Vehicle Mechanic</div>
+      <div class="course-list-item">Beauty Therapist</div>
+      <div class="course-list-item">Office Automation</div>
+      <div class="course-list-item">In-Design (Graphic Design)</div>
+      <div class="course-list-item">Acupressure Therapist</div>
+      <div class="course-list-item">Early Childhood Care & Education</div>
+      <div class="course-list-item">Fashion Design & Garment Making</div>
+    </div>
+  </div>
+  <div class="subsection">
+    <div class="subsection-divider" style="background:var(--rose)"></div>
+    <div class="subsection-title">📋 <span class="en">Certificate Programmes (Short Term)</span><span class="ta">குறுகிய கால சான்றிதழ் படிப்புகள்</span></div>
+    <div class="course-list">
+      <div class="course-list-item">Modern Techniques & Technology in Teaching</div>
+      <div class="course-list-item">ICT in Functional Tamil</div>
+      <div class="course-list-item">Brain Based Learning Techniques</div>
+      <div class="course-list-item">Adolescence Education</div>
+      <div class="course-list-item">Aquaculture</div>
+      <div class="course-list-item">Chemical Laboratory Safety Management</div>
+      <div class="course-list-item">Environmental Conservation</div>
+      <div class="course-list-item">Climate Change</div>
+      <div class="course-list-item">Entrepreneurship Development</div>
+      <div class="course-list-item">Logistics & Supply Chain Management</div>
+      <div class="course-list-item">Office Automation</div>
+      <div class="course-list-item">Basic Computer Operations</div>
+      <div class="course-list-item">Industrial Safety & Security</div>
+      <div class="course-list-item">Cold Storage Management</div>
+      <div class="course-list-item">Beautician</div>
+      <div class="course-list-item">Tailoring and Dress Making</div>
+      <div class="course-list-item">Life Skills and Personality Development</div>
+      <div class="course-list-item">Surface Embellishments</div>
+      <div class="course-list-item">Yoga Education</div>
+      <div class="course-list-item">Social Justice</div>
+      <div class="course-list-item">Road Safety & First Aid</div>
+      <div class="course-list-item">Dr. B.R. Ambedkar Thoughts</div>
+    </div>
+  </div>
+  <div class="callout tip"><div class="callout-icon">🌟</div><div><h4 class="en">Polytechnic Diploma → Lateral Entry to B.E. (Save 1 Year!)</h4><p class="en">After completing a 3-year Polytechnic Diploma, join B.E./B.Tech directly in 2nd year. Details at <a href="https://www.tnlea.com" target="_blank">tnlea.com</a></p></div></div>
+  <div class="callout trust"><div class="callout-icon">💛</div><div><h4>AIM REED Trust Can Help</h4><p>Vocational training is a powerful route out of poverty. AIM REED Trust actively supports skill-based education for students from financially disadvantaged backgrounds in Tamil Nadu.</p></div></div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- DISTANCE EDUCATION -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<section class="stream-section" id="s-distance">
+  <div class="stream-banner dist-bg">
+    <div class="stream-banner-icon">📱</div>
+    <div class="stream-banner-text">
+      <h2 class="en">Distance Education</h2>
+      <h2 class="ta">தொலைதூரக் கல்வி</h2>
+      <div class="ta-sub ta">Study from home — Tamil Nadu Open University (TNOU)</div>
+      <p class="en">Distance education lets you earn recognised degrees while working or if you cannot attend regular college. TNOU and IIT Madras online programmes are available.</p>
+    </div>
+  </div>
+  <div class="callout info"><div class="callout-icon">🔗</div><div><h4>Tamil Nadu Open University</h4><p>Official website: <a href="https://tnou.ac.in" target="_blank">tnou.ac.in</a> | IIT Madras Online B.Sc (Data Science): <a href="https://study.iitm.ac.in" target="_blank">study.iitm.ac.in</a></p></div></div>
+  <div class="subsection">
+    <div class="subsection-divider" style="background:var(--muted)"></div>
+    <div class="subsection-title">🎓 <span class="en">TNOU Programmes Available</span></div>
+    <div class="course-list">
+      <div class="course-list-item">B.A. (Various subjects — Distance)</div>
+      <div class="course-list-item">B.Com (Distance)</div>
+      <div class="course-list-item">B.Sc. (Distance)</div>
+      <div class="course-list-item">B.Ed (Distance)</div>
+      <div class="course-list-item">MBA (Distance)</div>
+      <div class="course-list-item">MCA (Distance)</div>
+      <div class="course-list-item">M.A. (Distance)</div>
+      <div class="course-list-item">M.Sc. (Distance)</div>
+      <div class="course-list-item">Various Diploma & Certificate Programmes</div>
+    </div>
+  </div>
+  <div class="subsection">
+    <div class="subsection-divider" style="background:var(--muted)"></div>
+    <div class="subsection-title">💻 <span class="en">Online Degree — IIT Madras</span></div>
+    <div class="course-grid">
+      <div class="course-card"><div class="course-card-header"><div class="course-icon">📊</div><div><h4>B.Sc. Data Science & Applications</h4></div></div><p class="en">100% online degree from IIT Madras. Open to all Class 12 passouts regardless of stream or age. Start anytime — no JEE needed.</p><div class="tag-row"><span class="tag tag-skill">Any Stream Can Apply</span></div></div>
+      <div class="course-card"><div class="course-card-header"><div class="course-icon">💻</div><div><h4>B.Sc. Electronic Systems</h4></div></div><p class="en">Online degree from IIT Madras. Physics & Maths required at Class 12 level. Join any time.</p><div class="tag-row"><span class="tag tag-skill">PCM Students</span></div></div>
+      <div class="course-card"><div class="course-card-header"><div class="course-icon">📜</div><div><h4>Diploma in Data Science / Programming</h4></div></div><p class="en">Shorter qualification from IIT Madras online programme. Can be done while working.</p><div class="tag-row"><span class="tag tag-skill">Working Professionals</span></div></div>
+    </div>
+  </div>
+  <div class="callout trust"><div class="callout-icon">💛</div><div><h4>AIM REED Trust Can Help</h4><p>Distance education fees and study materials can be a barrier for some students. AIM REED Trust can provide support — contact us to discuss your situation.</p></div></div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- GOVT JOBS & COMPETITIVE EXAMS -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<section class="stream-section" id="s-govt">
+  <div class="stream-banner govt-bg">
+    <div class="stream-banner-icon">🏛️</div>
+    <div class="stream-banner-text">
+      <h2 class="en">Government Jobs & Competitive Exams</h2>
+      <h2 class="ta">அரசு வேலைகள் & போட்டித் தேர்வுகள்</h2>
+      <div class="ta-sub ta">UPSC, TNPSC, SSC, Banking, Railway, Defence</div>
+      <p class="en">Government jobs offer stability, pension, and respect. Tamil Nadu students can target central and state government positions across all departments.</p>
+    </div>
+  </div>
+  <div class="callout tip"><div class="callout-icon">⭐</div><div><h4>Free Career Guidance Available!</h4><p class="en">The TN Department of Employment and Training offers FREE individual/group career guidance, FREE coaching classes for competitive exams, FREE access to well-stocked libraries, and e-content for competitive exams. Visit: <a href="https://tamilnaducareerservices.tn.gov.in" target="_blank">tamilnaducareerservices.tn.gov.in</a> | YouTube: <a href="https://www.youtube.com/c/TNCareerServicesEmployment" target="_blank">TN Career Services</a></p></div></div>
+  <div class="subsection">
+    <div class="subsection-divider" style="background:var(--saffron)"></div>
+    <div class="subsection-title">🏛️ <span class="en">Central Government — All India Exams</span><span class="ta">மத்திய அரசு தேர்வுகள்</span></div>
+    <div class="govt-grid">
+      <div class="govt-card"><h4>UPSC Civil Services (IAS / IPS / IFS)</h4><p>Become an IAS, IPS, or IFS officer. The most prestigious government exam in India.</p><a href="https://upsc.gov.in" target="_blank">upsc.gov.in</a></div>
+      <div class="govt-card"><h4>SSC — CGL, CHSL, MTS</h4><p>Various central government staff positions — Group B and C. Open to graduates and 12th passouts.</p><a href="https://ssc.gov.in" target="_blank">ssc.gov.in</a></div>
+      <div class="govt-card"><h4>NDA & NA — Defence Services</h4><p>National Defence Academy — join Army, Navy, Air Force after Class 12 (before age 19.5).</p><a href="https://upsc.gov.in" target="_blank">upsc.gov.in</a></div>
+      <div class="govt-card"><h4>Railway Recruitment (RRB)</h4><p>Group C and D positions across Indian Railways. Thousands of vacancies each year.</p><a href="https://www.rrbapply.gov.in" target="_blank">rrbapply.gov.in</a></div>
+      <div class="govt-card"><h4>Banking — IBPS</h4><p>PO, Clerk, Specialist Officer in nationalised banks. Open to graduates.</p><a href="https://www.ibps.in" target="_blank">ibps.in</a></div>
+      <div class="govt-card"><h4>RBI — Reserve Bank of India</h4><p>Grade B officers, assistants, and specialist roles. Highly competitive and prestigious.</p><a href="https://rbi.org.in" target="_blank">rbi.org.in</a></div>
+    </div>
+  </div>
+  <div class="subsection">
+    <div class="subsection-divider" style="background:var(--saffron)"></div>
+    <div class="subsection-title">🌟 <span class="en">Tamil Nadu State Government Exams</span><span class="ta">தமிழ்நாடு மாநில தேர்வுகள்</span></div>
+    <div class="govt-grid">
+      <div class="govt-card"><h4>TNPSC — Group I, IA, II, IIA, IV, VIII</h4><p>All Tamil Nadu state government jobs — collector, DSP, revenue officer, junior assistants.</p><a href="https://www.tnpsc.gov.in" target="_blank">tnpsc.gov.in</a></div>
+      <div class="govt-card"><h4>TNUSRB — Sub Inspector of Police</h4><p>Tamil Nadu Uniformed Services Recruitment Board. Police constable and SI positions.</p><a href="https://www.tnusrb.tn.gov.in" target="_blank">tnusrb.tn.gov.in</a></div>
+      <div class="govt-card"><h4>TRB — Teacher Recruitment Board</h4><p>Postgraduate Assistants, BT Assistants for govt schools. TEt/TNTET required.</p><a href="https://trb.tn.gov.in" target="_blank">trb.tn.gov.in</a></div>
+    </div>
+  </div>
+  <div class="subsection">
+    <div class="subsection-divider" style="background:var(--saffron)"></div>
+    <div class="subsection-title">💼 <span class="en">Private Jobs — Job Portals</span><span class="ta">தனியார் வேலைகள்</span></div>
+    <div class="college-grid">
+      <div class="college-card"><div class="college-dot" style="background:var(--green)"></div><div><strong>TN Private Jobs Portal</strong><div class="college-note">Official Tamil Nadu private sector job listings</div><a class="college-link" href="https://www.tnprivatejobs.tn.gov.in" target="_blank">tnprivatejobs.tn.gov.in</a></div></div>
+      <div class="college-card"><div class="college-dot" style="background:var(--navy)"></div><div><strong>National Career Services</strong><div class="college-note">Central government job portal — all sectors</div><a class="college-link" href="https://www.ncs.gov.in" target="_blank">ncs.gov.in</a></div></div>
+      <div class="college-card"><div class="college-dot" style="background:var(--saffron)"></div><div><strong>TN Career Services — Free Coaching</strong><div class="college-note">Free competitive exam coaching by TN govt</div><a class="college-link" href="https://tamilnaducareerservices.tn.gov.in" target="_blank">tamilnaducareerservices.tn.gov.in</a></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- SCHOLARSHIPS -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<section class="stream-section" id="s-scholarships">
+  <div class="stream-banner sch-bg">
+    <div class="stream-banner-icon">💛</div>
+    <div class="stream-banner-text">
+      <h2 class="en">Scholarships & Financial Support</h2>
+      <h2 class="ta">உதவித்தொகைகள் & நிதி உதவி</h2>
+      <div class="ta-sub ta">Don't let money stop your education — help is available</div>
+      <p class="en">Multiple scholarships are available for Tamil Nadu students. Many are government-funded and easy to apply for. Always apply — you may qualify for more than one.</p>
+      <p class="ta">பல உதவித்தொகைகள் கிடைக்கின்றன. பலவற்றை ஒரே நேரத்தில் விண்ணப்பிக்கலாம்.</p>
+    </div>
+  </div>
+  <div class="callout tip"><div class="callout-icon">⭐</div><div><h4 class="en">Apply Early — Deadlines Are Strict</h4><p class="en">Most scholarship portals open in June–August after Class 12 results. Don't wait — register on all portals immediately after your results. Many scholarships are first-come, first-served.</p><p class="ta">பெரும்பாலான உதவித்தொகை இணையதளங்கள் 12ஆம் வகுப்பு முடிவுகளுக்கு பிறகு ஜூன்–ஆகஸ்டில் திறக்கும். முடிவுகள் வந்தவுடன் உடனே விண்ணப்பிக்கவும்.</p></div></div>
+  <div class="scholarship-grid">
+    <div class="scholarship-card">
+      <div class="sc-icon">🏛️</div>
+      <h4 class="en">TN Adi Dravidar Welfare Scholarship</h4>
+      <div class="ta-name ta">ஆதி திராவிட நல உதவித்தொகை</div>
+      <p class="en">For SC/ST students — covers tuition fees, hostel charges and monthly stipend from Class 1 to PhD. Apply through the welfare department portal.</p>
+      <p class="ta">SC/ST மாணவர்களுக்கு — 1ஆம் வகுப்பிலிருந்து PhD வரை கல்வி உதவி.</p>
+      <a href="https://www.tnadw.in/scholarship" target="_blank">Apply at tnadw.in</a>
+    </div>
+    <div class="scholarship-card">
+      <div class="sc-icon">🌐</div>
+      <h4 class="en">National Scholarship Portal (NSP)</h4>
+      <div class="ta-name ta">தேசிய உதவித்தொகை இணையதளம்</div>
+      <p class="en">Central government scholarships for SC/ST, OBC, minority, differently-abled and meritorious students. One portal — multiple schemes. Apply once, get matched.</p>
+      <p class="ta">SC/ST, OBC, சிறுபான்மை & மாற்றுத்திறன் மாணவர்களுக்கு மத்திய அரசு உதவித்தொகை.</p>
+      <a href="https://scholarships.gov.in" target="_blank">Apply at scholarships.gov.in</a>
+    </div>
+    <div class="scholarship-card">
+      <div class="sc-icon">🎖️</div>
+      <h4 class="en">PMSSS — PM Special Scholarship Scheme</h4>
+      <div class="ta-name ta">PM சிறப்பு உதவித்தொகை</div>
+      <p class="en">For children of ex-servicemen, police officers killed on duty. Up to ₹3,000/month for girls and ₹2,500/month for boys.</p>
+      <p class="ta">முன்னாள் படை & காவல்துறை குடும்பங்களுக்கு.</p>
+      <a href="https://scholarships.gov.in" target="_blank">Apply at scholarships.gov.in</a>
+    </div>
+    <div class="scholarship-card">
+      <div class="sc-icon">🏦</div>
+      <h4 class="en">ICAI Scholarship — CA Students</h4>
+      <div class="ta-name ta">CA மாணவர்களுக்கு ICAI உதவித்தொகை</div>
+      <p class="en">For CA Foundation, Intermediate and Final students from low-income families. Monthly financial assistance. Apply via ICAI SSP portal.</p>
+      <p class="ta">CA மாணவர்களுக்கு மாதாந்திர நிதி உதவி. குறைந்த வருமான குடும்பங்களுக்கு.</p>
+      <a href="https://www.icai.org" target="_blank">Apply at icai.org</a>
+    </div>
+    <div class="scholarship-card">
+      <div class="sc-icon">📚</div>
+      <h4 class="en">TN Collegiate Education Scholarships</h4>
+      <div class="ta-name ta">தமிழ்நாடு கல்லூரிக் கல்வி உதவித்தொகை</div>
+      <p class="en">Various scholarships for students in TN government and aided colleges — merit-based and community-based. Apply via DCE portal.</p>
+      <p class="ta">அரசு & அரசு உதவி பெறும் கல்லூரி மாணவர்களுக்கு.</p>
+      <a href="https://www.tndce.tn.gov.in" target="_blank">Apply at tndce.tn.gov.in</a>
+    </div>
+    <div class="scholarship-card" style="border-color:var(--saffron); background: linear-gradient(135deg, #FFF8F3 0%, #FFF0E6 100%)">
+      <div class="sc-icon">🤝</div>
+      <h4 class="en">AIM REED Trust Education Grants</h4>
+      <div class="ta-name ta">AIM REED Trust கல்வி மானியம்</div>
+      <p class="en">For Tamil Nadu students facing genuine financial hardship — regardless of community or stream. Direct educational support. No bureaucratic barriers. We are here to help.</p>
+      <p class="ta">நிதி சிரமம் உள்ள தமிழ்நாடு மாணவர்களுக்கு — சமூகம், பிரிவு வேறுபாடு இன்றி நேரடி கல்வி உதவி.</p>
+      <a href="mailto:info@aimreedtrust.org" style="background:var(--saffron)">Contact Us Directly</a>
+    </div>
+  </div>
+
+  <div class="services-box" style="margin-top:40px">
+    <h3>🏛️ Free Services by TN Dept of Employment & Training</h3>
+    <div class="services-grid">
+      <div class="service-item"><div class="si-icon">🧭</div><div><p>Free individual & group career guidance</p><a href="https://tamilnaducareerservices.tn.gov.in" target="_blank">tamilnaducareerservices.tn.gov.in</a></div></div>
+      <div class="service-item"><div class="si-icon">📖</div><div><p>Free coaching classes for competitive exams</p><a href="https://tamilnaducareerservices.tn.gov.in" target="_blank">Register Here</a></div></div>
+      <div class="service-item"><div class="si-icon">📚</div><div><p>Free access to well-stocked libraries at district centres</p></div></div>
+      <div class="service-item"><div class="si-icon">📺</div><div><p>Telecast on Kalvi TV for competitive exam preparation</p><a href="https://www.youtube.com/c/TNCareerServicesEmployment" target="_blank">Watch on YouTube</a></div></div>
+      <div class="service-item"><div class="si-icon">💼</div><div><p>Private job listings in Tamil Nadu</p><a href="https://www.tnprivatejobs.tn.gov.in" target="_blank">tnprivatejobs.tn.gov.in</a></div></div>
+      <div class="service-item"><div class="si-icon">🌐</div><div><p>National Career Services — all-India job portal</p><a href="https://www.ncs.gov.in" target="_blank">ncs.gov.in</a></div></div>
+    </div>
+  </div>
+</section>
+
+</div><!-- end .main -->
+
+<!-- CTA SECTION -->
+<section class="cta-section">
+  <h2>Don't Face This <em>Alone</em></h2>
+  <p class="cta-sub en">AIM REED Trust is here to guide Tamil Nadu students through one of the most important decisions of their lives.</p>
+  <p class="cta-sub-ta ta">AIM REED Trust தமிழ்நாடு மாணவர்களுக்கு வழிகாட்ட இங்கே உள்ளது.</p>
+  <div class="cta-features">
+    <div class="cta-feat"><div class="cf-icon">🧭</div><h4 class="en">Course Guidance</h4><h4 class="ta">படிப்பு ஆலோசனை</h4><p class="en">Personalised advice based on your stream, marks, interests, and goals.</p><p class="ta">உங்கள் மதிப்பெண், ஆர்வம் & இலக்கு அடிப்படையில் ஆலோசனை.</p></div>
+    <div class="cta-feat"><div class="cf-icon">💰</div><h4 class="en">Financial Support Grants</h4><h4 class="ta">நிதி உதவி மானியம்</h4><p class="en">Education grants for students from financially disadvantaged backgrounds across Tamil Nadu.</p><p class="ta">நிதி சிரமம் உள்ள மாணவர்களுக்கு கல்வி மானியம்.</p></div>
+    <div class="cta-feat"><div class="cf-icon">📋</div><h4 class="en">Application Help</h4><h4 class="ta">விண்ணப்ப உதவி</h4><p class="en">Guidance on college admissions, scholarship forms, and entrance exam registration.</p><p class="ta">கல்லூரி சேர்க்கை, உதவித்தொகை, நுழைவுத் தேர்வுகளில் வழிகாட்டுதல்.</p></div>
+  </div>
+  <a href="mailto:info@aimreedtrust.org" class="cta-btn">
+    Contact AIM REED Trust for Guidance
+    <span class="ta">AIM REED Trust-ஐ தொடர்பு கொள்ளுங்கள்</span>
+  </a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">AIM <em>REED</em> TRUST</div>
+  <div class="footer-tagline">Serve The Society</div>
+  <div class="footer-links">
+    <a href="https://aimreedtrust.org" target="_blank">Home</a>
+    <a href="https://aimreedtrust.org/about/" target="_blank">About</a>
+    <a href="https://aimreedtrust.org/scholarship/" target="_blank">Scholarship</a>
+    <a href="https://aimreedtrust.org/trainings/careerguidance/" target="_blank">Career Guidance</a>
+    <a href="https://aimreedtrust.org/donate/" target="_blank">Donate</a>
+    <a href="https://aimreedtrust.org/contact/" target="_blank">Contact</a>
+    <a href="https://www.facebook.com/AIMTrust" target="_blank">Facebook</a>
+    <a href="https://www.instagram.com/AIMReedtrust" target="_blank">Instagram</a>
+    <a href="https://www.linkedin.com/company/aimreedtrust" target="_blank">LinkedIn</a>
+    <a href="https://www.youtube.com/AIMReedtrust" target="_blank">YouTube</a>
+  </div>
+  <div class="footer-links" style="margin-bottom:12px;">
+    <a href="https://nta.ac.in" target="_blank">NTA Exams</a>
+    <a href="https://www.tneaonline.org" target="_blank">TNEA</a>
+    <a href="https://www.tnpsc.gov.in" target="_blank">TNPSC</a>
+    <a href="https://scholarships.gov.in" target="_blank">NSP Scholarships</a>
+    <a href="https://tamilnaducareerservices.tn.gov.in" target="_blank">TN Career Services</a>
+    <a href="https://tnou.ac.in" target="_blank">TNOU</a>
+  </div>
+  <div class="footer-hashtags">#AIMREEDTrust &nbsp;·&nbsp; #ServeTheSociety &nbsp;·&nbsp; #Education &nbsp;·&nbsp; #TamilNadu &nbsp;·&nbsp; #After12th</div>
+  <div class="footer-credit">Based on the official Tamil Nadu Govt "Career Options After +2" guide · Enriched by AIM REED Trust · <a href="https://aimreedtrust.org" target="_blank" style="color:rgba(255,255,255,0.35)">aimreedtrust.org</a></div>
+</footer>
+
+<script>
+// ═══════════════════════════════════════════════════════════════
+// AIM REED TRUST — CAREER SEARCH ENGINE
+// Pure JS keyword matching, no API or storage required
+// ═══════════════════════════════════════════════════════════════
+
+const CAREER_DATABASE = [
+
+  // ─── ENGINEERING ─────────────────────────────────────────
+  {
+    id: 'cse', icon: '💻', stream: 'engineering', streamLabel: 'Engineering', streamColor: '#1A3A6B',
+    title: 'Computer Science & Software Engineering',
+    tamiltitle: 'கணினி அறிவியல் & மென்பொருள் பொறியியல்',
+    desc: 'Build apps, websites, AI systems, games and software. One of the highest paying fields with global job opportunities.',
+    steps: 'After 12th (PCM) → B.E./B.Tech CSE / AI&DS / IT → Software Engineer, App Developer, Data Scientist',
+    keywords: ['software', 'computer', 'computers', 'cse', 'coding', 'programmer', 'programming', 'developer', 'app', 'website', 'it', 'technology', 'tech', 'ai', 'artificial intelligence', 'data', 'machine learning', 'game', 'cyber', 'hacker', 'security', 'engineer', 'engineering', 'engg', 'b.tech', 'btech', 'b.e', 'be', 'jee', 'pcm', 'physics chemistry maths', 'software engineer', 'it job', 'infosys', 'tcs', 'wipro', 'digital', 'internet'],
+    exam: 'JEE / TNEA', link: 'engineering'
+  },
+  {
+    id: 'mech', icon: '⚙️', stream: 'engineering', streamLabel: 'Engineering', streamColor: '#1A3A6B',
+    title: 'Mechanical / Automobile / Aerospace Engineering',
+    tamiltitle: 'இயந்திர / மகிழுந்து / விண்வெளி பொறியியல்',
+    desc: 'Design engines, vehicles, machines, aircraft and manufacturing systems. Strong demand in automobile and defence sectors.',
+    steps: 'After 12th (PCM) → B.E. Mechanical / Automobile / Aerospace → Design Engineer, Production Manager',
+    keywords: ['mechanical', 'mechanic', 'automobile', 'car', 'vehicle', 'engine', 'aerospace', 'aircraft', 'plane', 'robot', 'robotics', 'manufacturing', 'machine', 'factory', 'production', 'industrial', 'mining', 'safety engineer', 'fire', 'engg', 'engineering', 'engineer', 'jee', 'b.tech', 'btech', 'b.e', 'pcm', 'physics chemistry maths'],
+    exam: 'JEE / TNEA', link: 'engineering'
+  },
+  {
+    id: 'civil', icon: '🏗️', stream: 'engineering', streamLabel: 'Engineering', streamColor: '#1A3A6B',
+    title: 'Civil & Structural Engineering',
+    tamiltitle: 'சிவில் & கட்டமைப்பு பொறியியல்',
+    desc: 'Design bridges, roads, buildings, dams and infrastructure. Good government and private sector opportunities in Tamil Nadu.',
+    steps: 'After 12th (PCM) → B.E. Civil / Environmental → Site Engineer, Govt PWD jobs, Construction Manager',
+    keywords: ['civil', 'construction', 'building', 'bridge', 'road', 'architecture', 'architect', 'structure', 'dam', 'infrastructure', 'planning', 'surveyor', 'pwd', 'public works', 'engg', 'engineering', 'engineer', 'jee', 'b.tech', 'btech', 'b.e', 'pcm'],
+    exam: 'JEE / TNEA / NATA', link: 'engineering'
+  },
+  {
+    id: 'eee', icon: '⚡', stream: 'engineering', streamLabel: 'Engineering', streamColor: '#1A3A6B',
+    title: 'Electrical & Electronics Engineering',
+    tamiltitle: 'மின்சாரம் & மின்னணுவியல் பொறியியல்',
+    desc: 'Power systems, electronics, circuits, communication systems. Good opportunities in TANGEDCO, BSNL, ISRO and private sector.',
+    steps: 'After 12th (PCM) → B.E. EEE / ECE → Electrical Engineer, Communication Engineer, ISRO/DRDO',
+    keywords: ['electrical', 'electronics', 'electric', 'ece', 'eee', 'circuit', 'power', 'telecom', 'communication', 'signal', 'embedded', 'vlsi', 'instrumentation', 'control', 'tangedco', 'bsnl', 'isro', 'drdo', 'engg', 'engineering', 'engineer', 'jee', 'b.tech', 'btech', 'b.e', 'pcm'],
+    exam: 'JEE / TNEA', link: 'engineering'
+  },
+  {
+    id: 'biotech_eng', icon: '🧬', stream: 'engineering', streamLabel: 'Engineering', streamColor: '#1A3A6B',
+    title: 'Biotechnology / Chemical / Food Technology',
+    tamiltitle: 'உயிரித்தொழில்நுட்பம் / வேதியியல் / உணவு தொழில்நுட்பம்',
+    desc: 'Work in pharma, food processing, chemical plants, research labs. Tamil Nadu has many pharma and food processing industries.',
+    steps: 'After 12th (PCB/PCM) → B.Tech Biotech / Chemical / Food Tech → Research Scientist, Plant Manager',
+    keywords: ['biotech', 'biotechnology', 'chemical', 'chemistry', 'food', 'pharma', 'pharmaceutical', 'drug', 'medicine research', 'lab', 'research', 'food technology', 'dairy', 'textile', 'polymer', 'rubber', 'leather', 'petroleum', 'biology', 'pcb', 'engg', 'engineering', 'b.tech', 'btech', 'jee'],
+    exam: 'JEE / TNEA', link: 'engineering'
+  },
+
+  // ─── MEDICAL ──────────────────────────────────────────────
+  {
+    id: 'mbbs', icon: '🩺', stream: 'medical', streamLabel: 'Medical', streamColor: '#B52B27',
+    title: 'Doctor (MBBS)',
+    tamiltitle: 'மருத்துவர் (MBBS)',
+    desc: 'Become a licensed medical doctor. Treat patients, specialise in surgery, cardiology, paediatrics and more. Most respected profession.',
+    steps: 'After 12th (PCB) → NEET-UG → MBBS (5.5 years) → Internship → MD/MS Specialisation',
+    keywords: ['doctor', 'mbbs', 'medical', 'medicine', 'surgeon', 'surgery', 'physician', 'hospital', 'health', 'healthcare', 'patient', 'clinic', 'specialist', 'cardiologist', 'paediatrician', 'gynaecologist', 'neurologist', 'psychiatrist', 'treat', 'cure', 'heal', 'mmc', 'neet', 'biology', 'bio', 'pcb', 'help people'],
+    exam: 'NEET-UG', link: 'medical'
+  },
+  {
+    id: 'dentist', icon: '🦷', stream: 'medical', streamLabel: 'Medical', streamColor: '#B52B27',
+    title: 'Dentist (BDS)',
+    tamiltitle: 'பல் மருத்துவர் (BDS)',
+    desc: 'Dental surgery, orthodontics, oral health. Good private practice potential. Requires NEET.',
+    steps: 'After 12th (PCB) → NEET-UG → BDS (5 years) → Private Clinic or Govt Service',
+    keywords: ['dentist', 'dental', 'bds', 'teeth', 'oral', 'orthodontics', 'mouth', 'tooth'],
+    exam: 'NEET-UG', link: 'medical'
+  },
+  {
+    id: 'ayush', icon: '🌿', stream: 'medical', streamLabel: 'Medical', streamColor: '#B52B27',
+    title: 'Ayurveda / Homeopathy / Naturopathy (BAMS / BHMS / BNYS)',
+    tamiltitle: 'ஆயுர்வேதம் / ஹோமியோபதி / இயற்கை மருத்துவம்',
+    desc: 'Traditional medicine systems with growing demand. Can open own clinic. NEET required for BAMS and BHMS.',
+    steps: 'After 12th (PCB) → NEET-UG → BAMS/BHMS/BNYS (5.5 years) → Own Clinic or Govt Service',
+    keywords: ['ayurveda', 'ayurvedic', 'homeopathy', 'homoeopathy', 'naturopathy', 'yoga', 'bams', 'bhms', 'bnys', 'traditional medicine', 'herbal', 'natural', 'unani', 'siddha'],
+    exam: 'NEET-UG', link: 'medical'
+  },
+  {
+    id: 'pharmacy', icon: '💊', stream: 'medical', streamLabel: 'Medical', streamColor: '#B52B27',
+    title: 'Pharmacy (B.Pharm / D.Pharm)',
+    tamiltitle: 'மருந்தியல் (B.Pharm / D.Pharm)',
+    desc: 'Dispense medicines, work in pharma companies, hospitals, research. Tamil Nadu is a major pharma hub.',
+    steps: 'After 12th (PCB/PCM) → B.Pharm (4 years) or D.Pharm (2 years) → Pharmacist, Drug Inspector',
+    keywords: ['pharmacy', 'pharmacist', 'bpharm', 'dpharm', 'medicine', 'drug', 'pills', 'medical shop', 'chemist', 'dispensary'],
+    exam: 'NEET / Direct', link: 'medical'
+  },
+  {
+    id: 'nursing', icon: '🏥', stream: 'medical', streamLabel: 'Medical', streamColor: '#B52B27',
+    title: 'Nursing (B.Sc Nursing / GNM)',
+    tamiltitle: 'செவிலியம் (B.Sc Nursing)',
+    desc: 'Care for patients in hospitals, clinics, and homes. High demand in India and abroad. Good salary and career growth.',
+    steps: 'After 12th (PCB) → B.Sc Nursing (4 years) / GNM (3 years) → Staff Nurse → Head Nurse',
+    keywords: ['nurse', 'nursing', 'gnm', 'bsc nursing', 'care', 'patient care', 'ward', 'hospital job', 'caregiver', 'midwife', 'abroad nurse', 'uk nurse', 'gulf nurse', 'biology', 'pcb', 'help people', 'helping people'],
+    exam: 'Direct / NEET optional', link: 'medical'
+  },
+  {
+    id: 'physiotherapy', icon: '🦿', stream: 'medical', streamLabel: 'Medical', streamColor: '#B52B27',
+    title: 'Physiotherapy / Occupational Therapy (BPT / BOT)',
+    tamiltitle: 'இயன்மூலவியல் / தொழில் சிகிச்சை',
+    desc: 'Rehabilitate patients after accidents, strokes, surgeries. High demand in sports medicine and private clinics.',
+    steps: 'After 12th (PCB) → BPT/BOT (4.5 years) → Physiotherapist → Private Clinic or Sports Team',
+    keywords: ['physiotherapy', 'physiotherapist', 'bpt', 'bot', 'rehabilitation', 'sports medicine', 'occupational therapy', 'disability', 'stroke', 'accident recovery'],
+    exam: 'Direct Admission', link: 'medical'
+  },
+  {
+    id: 'allied', icon: '🔬', stream: 'medical', streamLabel: 'Medical', streamColor: '#B52B27',
+    title: 'Allied Health Sciences (Lab / Radiology / OT)',
+    tamiltitle: 'துணை சுகாதார அறிவியல்',
+    desc: 'Work in hospital labs, X-ray departments, operation theatres, dialysis units. Faster and more affordable than MBBS.',
+    steps: 'After 12th (PCB) → B.Sc Medical Lab Tech / Radiology / OT Tech (3 years) → Hospital Jobs',
+    keywords: ['lab technician', 'laboratory', 'lab tech', 'radiology', 'xray', 'x-ray', 'scan', 'mri', 'dialysis', 'operation theatre', 'ot', 'anaesthesia', 'ecg', 'eeg', 'optometry', 'medical lab', 'allied health', 'cardiology', 'biology', 'pcb', 'medical'],
+    exam: 'Direct Admission', link: 'medical'
+  },
+  {
+    id: 'vet', icon: '🐄', stream: 'medical', streamLabel: 'Medical', streamColor: '#B52B27',
+    title: 'Veterinary Science (B.V.Sc)',
+    tamiltitle: 'கால்நடை மருத்துவம்',
+    desc: 'Treat animals — pets, livestock, farm animals. Good government jobs in Animal Husbandry Department, TN.',
+    steps: 'After 12th (PCB) → NEET → B.V.Sc (5.5 years) → Veterinary Officer / Private Clinic',
+    keywords: ['vet', 'veterinary', 'veterinarian', 'animal', 'animals', 'pet', 'livestock', 'cow', 'dog', 'cattle', 'animal husbandry', 'farm animal'],
+    exam: 'NEET-UG', link: 'medical'
+  },
+
+  // ─── SCIENCE ──────────────────────────────────────────────
+  {
+    id: 'data_science', icon: '📊', stream: 'science', streamLabel: 'B.Sc Science', streamColor: '#2E7D9C',
+    title: 'Data Science / Statistics / Mathematics',
+    tamiltitle: 'தரவு அறிவியல் / புள்ளியியல் / கணிதம்',
+    desc: 'Analyse data, build models, find insights. Fastest growing field in India with huge salaries.',
+    steps: 'After 12th (PCM) → B.Sc Maths/Statistics/Data Science / IIT Madras Online → Data Analyst, Data Scientist',
+    keywords: ['data', 'data science', 'statistics', 'maths', 'mathematics', 'analytics', 'analyst', 'excel', 'python', 'numbers', 'research', 'actuary'],
+    exam: 'CUET / IIT Madras Online', link: 'science'
+  },
+  {
+    id: 'forensic', icon: '🔍', stream: 'science', streamLabel: 'B.Sc Science', streamColor: '#2E7D9C',
+    title: 'Forensic Science / Criminology',
+    tamiltitle: 'நீதி அறிவியல்',
+    desc: 'Work with police and courts to solve crimes using science. DNA analysis, fingerprinting, crime scene investigation.',
+    steps: 'After 12th (PCB/PCM) → B.Sc Forensic Science → Forensic Analyst, Police Forensics, CBI',
+    keywords: ['forensic', 'forensics', 'crime', 'cbi', 'police science', 'investigation', 'detective', 'criminal', 'criminology', 'crime scene', 'cid'],
+    exam: 'CUET / Direct', link: 'science'
+  },
+  {
+    id: 'visual_comm', icon: '🎬', stream: 'science', streamLabel: 'Arts & Media', streamColor: '#2E7D9C',
+    title: 'Visual Communication / Animation / Film Making',
+    tamiltitle: 'காட்சி தொடர்பு / அனிமேஷன் / திரைப்படம்',
+    desc: 'Photography, filmmaking, animation, graphic design. Booming field with opportunities in Tamil film industry and digital media.',
+    steps: 'After 12th (Any Stream) → B.Sc Visual Communication / Animation → Film Director, Animator, Photographer',
+    keywords: ['film', 'films', 'cinema', 'movie', 'movies', 'director', 'camera', 'photography', 'photo', 'animation', 'animator', 'visual', 'graphic', 'video', 'youtube', 'media', 'tv', 'news', 'broadcast', 'cinematography', 'editing', 'vfx', 'kollywood'],
+    exam: 'Direct / CUET', link: 'science'
+  },
+  {
+    id: 'psychology', icon: '🧠', stream: 'science', streamLabel: 'B.Sc Science', streamColor: '#2E7D9C',
+    title: 'Psychology / Counselling',
+    tamiltitle: 'உளவியல் / ஆலோசனை',
+    desc: 'Understand human behaviour, counsel patients, work in schools, hospitals, corporates and NGOs.',
+    steps: 'After 12th (Any) → B.Sc/B.A Psychology → M.Sc Psychology → Counsellor, Psychologist, HR Specialist',
+    keywords: ['psychology', 'psychologist', 'counselling', 'counselor', 'mental health', 'therapy', 'therapist', 'behaviour', 'human mind', 'stress', 'emotions', 'psychiatry', 'social work'],
+    exam: 'CUET / Direct', link: 'science'
+  },
+  {
+    id: 'sports', icon: '🏃', stream: 'science', streamLabel: 'Physical Education', streamColor: '#2E7D9C',
+    title: 'Sports / Physical Education',
+    tamiltitle: 'விளையாட்டு / உடல் கல்வி',
+    desc: 'Career in sports coaching, PE teaching, sports management or become a professional athlete.',
+    steps: 'After 12th (Any) → B.P.Ed / B.Sc Sports → PE Teacher, Sports Coach, National Athlete',
+    keywords: ['sports', 'sport', 'athlete', 'cricket', 'football', 'kabaddi', 'coaching', 'physical education', 'pe', 'gym', 'fitness', 'coach', 'trainer', 'yoga', 'physical'],
+    exam: 'TNPESU / Direct', link: 'science'
+  },
+  {
+    id: 'nutrition', icon: '🥗', stream: 'science', streamLabel: 'B.Sc Science', streamColor: '#2E7D9C',
+    title: 'Nutrition, Dietetics & Food Science',
+    tamiltitle: 'ஊட்டச்சத்து, உணவியல் & உணவு அறிவியல்',
+    desc: 'Help people eat healthy. Work in hospitals, sports teams, food companies, and run private diet clinics.',
+    steps: 'After 12th (PCB) → B.Sc Nutrition & Dietetics → Dietitian, Food Technologist, Hospital Nutritionist',
+    keywords: ['nutrition', 'nutritionist', 'dietitian', 'diet', 'food', 'health food', 'cooking', 'baking', 'chef', 'culinary', 'catering', 'hotel management', 'dietetics'],
+    exam: 'Direct Admission', link: 'science'
+  },
+
+  // ─── ARTS & HUMANITIES ────────────────────────────────────
+  {
+    id: 'ias', icon: '🏛️', stream: 'arts', streamLabel: 'Arts & Govt', streamColor: '#5B2C8D',
+    title: 'IAS / Civil Services (UPSC / TNPSC)',
+    tamiltitle: 'IAS / அரசுப்பணி (UPSC / TNPSC)',
+    desc: 'Become a Collector, IPS officer, or State Government officer. Most prestigious career in India.',
+    steps: 'After 12th (Any Stream) → Any Degree (History/Polity recommended) → UPSC/TNPSC Coaching → IAS/IPS/DSP',
+    keywords: ['ias', 'ips', 'upsc', 'tnpsc', 'collector', 'civil service', 'civil services', 'government officer', 'district collector', 'dsp', 'group 1', 'group 2', 'officer', 'administrative', 'government', 'govt', 'sarkari', 'government job', 'state government', 'arts', 'humanities', 'history', 'political science'],
+    exam: 'UPSC / TNPSC', link: 'arts'
+  },
+  {
+    id: 'teacher', icon: '👩‍🏫', stream: 'arts', streamLabel: 'Education', streamColor: '#5B2C8D',
+    title: 'Teacher / Professor',
+    tamiltitle: 'ஆசிரியர் / பேராசிரியர்',
+    desc: 'Teach in govt or private schools and colleges. Respected profession with job security and pension in Tamil Nadu.',
+    steps: 'After 12th → Any Degree → B.Ed (2 years) → TET/TRB Exam → Govt School Teacher',
+    keywords: ['teacher', 'teaching', 'school', 'lecture', 'professor', 'education', 'bed', 'b.ed', 'tet', 'trb', 'classroom', 'tutor', 'coaching', 'college lecturer', 'school job', 'ded', 'primary teacher', 'arts', 'humanities'],
+    exam: 'TET / TRB / B.Ed', link: 'arts'
+  },
+  {
+    id: 'journalism', icon: '📰', stream: 'arts', streamLabel: 'Media', streamColor: '#5B2C8D',
+    title: 'Journalism & Mass Communication',
+    tamiltitle: 'பத்திரிகையியல் & ஊடகவியல்',
+    desc: 'Report news, write articles, present on TV/radio. Growing demand for Tamil-language journalists and content creators.',
+    steps: 'After 12th (Any) → B.A Journalism / Mass Comm → Reporter, Anchor, Content Creator, PR',
+    keywords: ['journalism', 'journalist', 'news', 'reporter', 'anchor', 'media', 'tv', 'radio', 'newspaper', 'magazine', 'content', 'writer', 'writing', 'blog', 'social media', 'pr', 'public relations', 'communication', 'arts', 'humanities'],
+    exam: 'Direct / CUET', link: 'arts'
+  },
+  {
+    id: 'social_work', icon: '🤝', stream: 'arts', streamLabel: 'Social Work', streamColor: '#5B2C8D',
+    title: 'Social Work / NGO / Development',
+    tamiltitle: 'சமூக சேவை / NGO / அபிவிருத்தி',
+    desc: 'Work with NGOs, government welfare departments, international organisations like UNICEF, WHO to serve communities.',
+    steps: 'After 12th (Any) → B.A/B.Sc Social Work → NGO Worker, Community Development Officer, UNICEF',
+    keywords: ['ngo', 'social work', 'social worker', 'charity', 'community', 'welfare', 'volunteer', 'help', 'aid', 'development', 'unicef', 'who', 'serve', 'society', 'arts', 'humanities', 'help people', 'helping people'],
+    exam: 'Direct Admission', link: 'arts'
+  },
+  {
+    id: 'foreign_lang', icon: '🌍', stream: 'arts', streamLabel: 'Languages', streamColor: '#5B2C8D',
+    title: 'Foreign Languages (French / German / Spanish / Arabic)',
+    tamiltitle: 'வெளிநாட்டு மொழிகள்',
+    desc: 'Become a translator, interpreter, language teacher or work in embassies. French and German are in high demand.',
+    steps: 'After 12th (Any) → B.A French/German/Spanish/Arabic → Translator, Embassy, MNC, Language Teacher',
+    keywords: ['french', 'german', 'spanish', 'arabic', 'foreign language', 'language', 'translate', 'translator', 'interpreter', 'embassy', 'abroad', 'europe', 'language teacher'],
+    exam: 'Direct Admission', link: 'arts'
+  },
+
+  // ─── COMMERCE ─────────────────────────────────────────────
+  {
+    id: 'ca', icon: '📋', stream: 'commerce', streamLabel: 'Commerce', streamColor: '#1B6B45',
+    title: 'Chartered Accountant (CA)',
+    tamiltitle: 'சார்ட்டர்டு அக்கவுண்டன்ட் (CA)',
+    desc: 'One of the most prestigious and high-paying qualifications in India. Audit companies, file taxes, manage finances.',
+    steps: 'After 12th (Commerce/Any) → CA Foundation (ICAI) → Intermediate → Final → Articleship → CA',
+    keywords: ['ca', 'chartered accountant', 'accountant', 'accounting', 'finance', 'audit', 'auditor', 'tax', 'taxation', 'gst', 'tally', 'icai', 'cma', 'cpa', 'accounts', 'balance sheet', 'financial', 'commerce', 'b.com', 'bcom'],
+    exam: 'CA Foundation — icai.org', link: 'commerce'
+  },
+  {
+    id: 'business', icon: '💼', stream: 'commerce', streamLabel: 'Commerce', streamColor: '#1B6B45',
+    title: 'Business Management / Entrepreneurship (BBA / MBA)',
+    tamiltitle: 'வணிக மேலாண்மை / தொழில் முனைவு',
+    desc: 'Manage businesses, start your own company, work in marketing, HR, or operations. Good pathway through BBA then MBA.',
+    steps: 'After 12th (Any) → BBA (3 years) → MBA → Manager, Entrepreneur, Marketing Head',
+    keywords: ['business', 'businessman', 'entrepreneur', 'startup', 'company', 'bba', 'mba', 'iim', 'ipm', 'cat', 'management', 'manager', 'marketing', 'sales', 'hr', 'human resources', 'operations', 'commerce', 'b.com', 'bcom', 'trade', 'shop', 'own business'],
+    exam: 'Direct / IPM-IIM', link: 'commerce'
+  },
+  {
+    id: 'banking', icon: '🏦', stream: 'commerce', streamLabel: 'Commerce / Govt', streamColor: '#1B6B45',
+    title: 'Banking & Finance (IBPS / SBI / RBI)',
+    tamiltitle: 'வங்கி & நிதி (IBPS / SBI / RBI)',
+    desc: 'Work as a Bank PO, Clerk, or Specialist Officer in nationalised banks. Stable job with good salary.',
+    steps: 'After 12th → B.Com/BBA (any degree) → IBPS PO / SBI PO Exam → Bank Officer',
+    keywords: ['bank', 'banking', 'banker', 'ibps', 'sbi', 'rbi', 'po', 'clerk', 'bank job', 'finance', 'loan', 'deposit', 'nri', 'cooperative bank', 'post office', 'insurance', 'lic'],
+    exam: 'IBPS / SBI / RBI Exams', link: 'commerce'
+  },
+  {
+    id: 'hotel_mgmt', icon: '🏨', stream: 'commerce', streamLabel: 'Hospitality', streamColor: '#1B6B45',
+    title: 'Hotel Management & Tourism',
+    tamiltitle: 'ஹோட்டல் மேலாண்மை & சுற்றுலா',
+    desc: 'Work in 5-star hotels, airlines, cruise ships, resorts, tourism companies. Global career opportunities.',
+    steps: 'After 12th (Any) → B.Sc Hotel Management / BHMCT → Chef, Hotel Manager, Cabin Crew',
+    keywords: ['hotel', 'hotel management', 'hospitality', 'tourism', 'travel', 'chef', 'cook', 'culinary', 'food', 'restaurant', 'resort', 'airline', 'cabin crew', 'air hostess', 'pilot training', 'cruise', 'catering'],
+    exam: 'NCHMJEE via nta.ac.in', link: 'commerce'
+  },
+
+  // ─── LAW ──────────────────────────────────────────────────
+  {
+    id: 'lawyer', icon: '⚖️', stream: 'law', streamLabel: 'Law', streamColor: '#8B2500',
+    title: 'Lawyer / Advocate (LLB)',
+    tamiltitle: 'வழக்கறிஞர் / அட்வகேட்',
+    desc: 'Practice in courts, work in corporate law, human rights, criminal defence or public prosecution. Growing demand in Tamil Nadu.',
+    steps: 'After 12th → 5-year BA LLB (integrated) or any degree + 3-year LLB → Bar Council Exam → Advocate',
+    keywords: ['lawyer', 'advocate', 'law', 'legal', 'court', 'judge', 'justice', 'llb', 'barrister', 'solicitor', 'litigation', 'criminal law', 'corporate law', 'human rights', 'clat', 'legal officer', 'high court', 'supreme court'],
+    exam: 'CLAT / TNDALU', link: 'law'
+  },
+  {
+    id: 'judge', icon: '👨‍⚖️', stream: 'law', streamLabel: 'Law / Judiciary', streamColor: '#8B2500',
+    title: 'Judge / Judicial Services',
+    tamiltitle: 'நீதிபதி / நீதித்துறை சேவை',
+    desc: 'Become a Civil Judge or District Judge through Tamil Nadu Judicial Services Examination. Most prestigious legal career.',
+    steps: 'After Degree → LLB → Judicial Services Exam (TNPSC) → Civil Judge → District Judge',
+    keywords: ['judge', 'judiciary', 'judicial', 'court', 'magistrate', 'district judge', 'high court', 'civil judge', 'justice'],
+    exam: 'TNPSC Judicial Exam', link: 'law'
+  },
+
+  // ─── AGRICULTURE ──────────────────────────────────────────
+  {
+    id: 'agriculture', icon: '🌾', stream: 'agriculture', streamLabel: 'Agriculture', streamColor: '#4A7A1E',
+    title: 'Agriculture / Horticulture / Farming',
+    tamiltitle: 'வேளாண்மை / தோட்டக்கலை / விவசாயம்',
+    desc: 'Modern agriculture with technology, drone farming, organic farming. Good govt jobs and agri-business opportunities.',
+    steps: 'After 12th (PCB/PCM) → B.Sc Agriculture / Horticulture at TNAU → Agricultural Officer, Agri-Entrepreneur',
+    keywords: ['agriculture', 'farming', 'farmer', 'agri', 'crop', 'paddy', 'rice', 'horticulture', 'garden', 'flower', 'vegetable', 'fruit', 'organic', 'soil', 'irrigation', 'sericulture', 'silk', 'tnau'],
+    exam: 'TNAU Entrance', link: 'agriculture'
+  },
+  {
+    id: 'fisheries', icon: '🐟', stream: 'agriculture', streamLabel: 'Agriculture', streamColor: '#4A7A1E',
+    title: 'Fisheries & Aquaculture',
+    tamiltitle: 'மீன்வளம் & நீர்வாழ் உயிரினம்',
+    desc: 'Tamil Nadu has a huge coastline. Fisheries science, aquaculture and marine biology offer good career paths.',
+    steps: 'After 12th (PCB) → B.F.Sc Fisheries / B.Sc Aquaculture at TNJFU → Fisheries Officer, Aquaculture Farmer',
+    keywords: ['fisheries', 'fish', 'fishing', 'marine', 'aquaculture', 'seafood', 'prawn', 'shrimp', 'fish farming', 'tnjfu', 'coast', 'sea'],
+    exam: 'TNJFU Entrance', link: 'agriculture'
+  },
+  {
+    id: 'drone_agri', icon: '🚁', stream: 'agriculture', streamLabel: 'Agriculture Tech', streamColor: '#4A7A1E',
+    title: 'Drone Technology in Agriculture',
+    tamiltitle: 'வேளாண்மையில் ட்ரோன் தொழில்நுட்பம்',
+    desc: 'Newest and fastest growing field — use drones for crop monitoring, spraying and mapping. High demand in agri-tech companies.',
+    steps: 'After 12th → Diploma in Drone Technology in Agriculture (TNAU) → Agri-Tech Company, Startup',
+    keywords: ['drone', 'uav', 'agri tech', 'agritech', 'precision farming', 'smart farming', 'technology farming', 'drone farming'],
+    exam: 'Diploma Course — TNAU', link: 'agriculture'
+  },
+
+  // ─── VOCATIONAL ───────────────────────────────────────────
+  {
+    id: 'polytechnic', icon: '🛠️', stream: 'vocational', streamLabel: 'Vocational', streamColor: '#B52B27',
+    title: 'Polytechnic Diploma (Engineering)',
+    tamiltitle: 'பாலிடெக்னிக் டிப்ளோமா',
+    desc: '3-year hands-on engineering diploma. Low cost, faster employment, and option to do lateral entry into B.E 2nd year.',
+    steps: 'After 10th/12th → 3-year Polytechnic Diploma → Job or Lateral Entry to B.E 2nd year',
+    keywords: ['polytechnic', 'diploma', 'iti', 'vocational', 'trade', 'electrician', 'fitter', 'welder', 'mechanic', 'machinist', 'copa', 'copa course', 'short course', 'skill', 'quick job', 'less cost'],
+    exam: 'Direct / TNEA Polytechnic', link: 'vocational'
+  },
+  {
+    id: 'fashion', icon: '👗', stream: 'vocational', streamLabel: 'Design', streamColor: '#B52B27',
+    title: 'Fashion Design / Textile / Interior Design',
+    tamiltitle: 'நாகரிக வடிவமைப்பு / ஜவுளி / உள்ளக அலங்காரம்',
+    desc: 'Design clothes, textiles, furniture and interiors. Tamil Nadu is India\'s textile capital with huge industry opportunities.',
+    steps: 'After 12th (Any) → B.Sc/Diploma Fashion Design / NIFT Entrance → Fashion Designer, Textile Designer',
+    keywords: ['fashion', 'design', 'designer', 'clothes', 'dress', 'textile', 'tailoring', 'stitch', 'fabric', 'interior', 'decor', 'furniture', 'nift', 'sketch', 'drawing'],
+    exam: 'NIFT Entrance — nift.ac.in', link: 'vocational'
+  },
+  {
+    id: 'beauty', icon: '💄', stream: 'vocational', streamLabel: 'Vocational', streamColor: '#B52B27',
+    title: 'Beauty & Wellness / Beautician',
+    tamiltitle: 'அழகுகலை & சுகாதாரம்',
+    desc: 'Hairdressing, makeup, skincare, spa. Can start own salon. Short course options available. Good for self-employment.',
+    steps: 'After 10th/12th → Certificate/Diploma Beautician → Own Salon / Work in Beauty Parlour',
+    keywords: ['beauty', 'beautician', 'makeup', 'hair', 'salon', 'parlour', 'skincare', 'spa', 'massage', 'wellness', 'grooming', 'cosmetology', 'nail'],
+    exam: 'Short Course / TNOU', link: 'vocational'
+  },
+  {
+    id: 'it_short', icon: '💻', stream: 'vocational', streamLabel: 'Skill / IT', streamColor: '#B52B27',
+    title: 'Short-Term IT & Digital Skills',
+    tamiltitle: 'குறுகிய கால IT & டிஜிட்டல் திறன்கள்',
+    desc: 'Web development, Python, digital marketing, UI/UX design. Quickly employable skills. Free or low-cost courses available.',
+    steps: 'After 12th (Any) → COPA / Web Dev / Python Course → Freelancer, IT Company Junior Developer',
+    keywords: ['web development', 'web developer', 'python', 'digital marketing', 'ui ux', 'graphic design', 'freelance', 'photoshop', 'canva', 'short course', 'skill india', 'nsdc', 'online course', 'certificate course'],
+    exam: 'Skill India / NSDC', link: 'vocational'
+  },
+
+  // ─── GOVERNMENT / DEFENCE ─────────────────────────────────
+  {
+    id: 'army', icon: '🪖', stream: 'govt', streamLabel: 'Defence / Govt', streamColor: '#6B4400',
+    title: 'Army / Navy / Air Force (NDA / Defence)',
+    tamiltitle: 'இராணுவம் / கடற்படை / வான்படை',
+    desc: 'Serve the nation in the Armed Forces. NDA can be joined directly after Class 12. Officer rank through NDA exam.',
+    steps: 'After 12th (PCM) → NDA Exam (UPSC) → Army/Navy/Air Force Officer → Colonel/Commodore',
+    keywords: ['army', 'military', 'defence', 'nda', 'navy', 'air force', 'airforce', 'soldier', 'officer', 'captain', 'colonel', 'armed forces', 'indian army', 'crpf', 'cisf', 'bsf', 'paramilitary', 'defence job'],
+    exam: 'NDA via UPSC / upsc.gov.in', link: 'govt'
+  },
+  {
+    id: 'police', icon: '👮', stream: 'govt', streamLabel: 'Govt / Police', streamColor: '#6B4400',
+    title: 'Police / Sub Inspector (TNUSRB)',
+    tamiltitle: 'காவல்துறை / துணை ஆய்வாளர்',
+    desc: 'Join Tamil Nadu Police as Constable or Sub Inspector. Stable government job with pension and respect.',
+    steps: 'After 12th (Any) → Physical Training → TNUSRB Exam → Constable → SI → Inspector',
+    keywords: ['police', 'policeman', 'constable', 'sub inspector', 'si', 'tnusrb', 'inspector', 'cop', 'law enforcement', 'tn police'],
+    exam: 'TNUSRB / tnusrb.tn.gov.in', link: 'govt'
+  },
+  {
+    id: 'railway', icon: '🚂', stream: 'govt', streamLabel: 'Govt / Railway', streamColor: '#6B4400',
+    title: 'Railway Jobs (RRB)',
+    tamiltitle: 'ரயில்வே வேலைகள் (RRB)',
+    desc: 'Thousands of vacancies every year in Indian Railways — station master, loco pilot, technician, group C and D.',
+    steps: 'After 12th (Any) → RRB Exam → Railway Technician / Group C / Station Master',
+    keywords: ['railway', 'train', 'rrb', 'railway job', 'loco pilot', 'station master', 'tte', 'railway technician', 'ntpc', 'group d'],
+    exam: 'RRB / rrbapply.gov.in', link: 'govt'
+  },
+  {
+    id: 'ssc', icon: '🏢', stream: 'govt', streamLabel: 'Central Govt', streamColor: '#6B4400',
+    title: 'Central Government Jobs (SSC / UPSC)',
+    tamiltitle: 'மத்திய அரசு வேலைகள் (SSC)',
+    desc: 'Income Tax, Customs, CBI, Central Secretariat, Post Office and other central govt jobs through SSC exams.',
+    steps: 'After 12th/Graduation → SSC CGL/CHSL Exam → Income Tax Inspector, Central Govt Clerk, Customs Officer',
+    keywords: ['ssc', 'central government', 'income tax', 'customs', 'cbi', 'post office', 'secretariat', 'government job', 'ssc cgl', 'ssc chsl', 'staff selection', 'central govt'],
+    exam: 'SSC / ssc.gov.in', link: 'govt'
+  },
+
+  // ─── SCHOLARSHIPS / FINANCIAL HELP ───────────────────────
+  {
+    id: 'scholarship_help', icon: '💛', stream: 'scholarships', streamLabel: 'Scholarships', streamColor: '#D4960A',
+    title: 'Scholarships & Financial Support',
+    tamiltitle: 'உதவித்தொகை & நிதி உதவி',
+    desc: 'Don\'t let money stop your education. Multiple scholarships available for Tamil Nadu students — SC/ST, OBC, minority, merit-based and from AIM REED Trust.',
+    steps: 'Check NSP portal (scholarships.gov.in) → TN ADW Scholarship → ICAI Scholarship → AIM REED Trust Grants',
+    keywords: ['scholarship', 'financial help', 'money', 'fees', 'free', 'loan', 'fund', 'no money', 'poor', 'financial support', 'aid', 'grant', 'stipend', 'education loan', 'aim reed', 'welfare', 'sc st scholarship', 'obc scholarship'],
+    exam: 'scholarships.gov.in', link: 'scholarships'
+  },
+  {
+    id: 'distance_edu', icon: '📱', stream: 'distance', streamLabel: 'Distance Education', streamColor: '#6B7280',
+    title: 'Distance Education / Study While Working',
+    tamiltitle: 'தொலைதூரக் கல்வி / வேலை பார்த்துக்கொண்டே படிக்கலாம்',
+    desc: 'Can\'t attend regular college? TNOU and IIT Madras Online offer recognised degrees you can study from home.',
+    steps: 'After 12th (Any) → TNOU Distance Degree / IIT Madras Online BSc → Degree while earning',
+    keywords: ['distance', 'online', 'work and study', 'home study', 'part time', 'tnou', 'open university', 'iit madras online', 'correspondence', 'evening college', 'flexible'],
+    exam: 'TNOU / IIT Madras Online', link: 'distance'
+  }
+];
+
+// ─── SEARCH LOGIC ────────────────────────────────────────────
+function tokenize(text) {
+  // Preserve common educational abbreviations like B.Com, B.Tech, B.E, M.A, B.A, M.Sc
+  const lower = text.toLowerCase();
+  const preserved = [];
+  const abbrevPattern = /\b(b\.com|bcom|b\.tech|btech|b\.e|b\.a|m\.com|m\.tech|m\.a|m\.sc|b\.sc|b\.ed|m\.ed|b\.pharm|d\.pharm|m\.b\.b\.s|mbbs|b\.b\.a|bba|m\.b\.a|mba|b\.l\.l\.b|llb|llm|c\.a|ca|p\.c\.m|pcm|p\.c\.b|pcb|i\.a\.s|ias|i\.p\.s|ips|s\.s\.c|ssc|n\.d\.a|nda|j\.e\.e|jee|n\.e\.e\.t|neet|c\.l\.a\.t|clat|c\.u\.e\.t|cuet|i\.t\.i|iti|i\.i\.t|iit|i\.i\.m|iim)\b/g;
+  let match;
+  let normalized = lower;
+  while ((match = abbrevPattern.exec(lower)) !== null) {
+    const found = match[0].replace(/\./g, '');
+    preserved.push(found);
+    normalized = normalized.replace(match[0], ' ');
+  }
+  // Tokenise the rest
+  const rest = normalized.replace(/[^a-z0-9\s]/g, ' ').split(/\s+/).filter(t => t.length > 1);
+  return [...preserved, ...rest];
+}
+
+function scoreResult(entry, queryTokens) {
+  const allText = [
+    entry.title, entry.tamiltitle, entry.desc,
+    entry.steps, entry.keywords.join(' ')
+  ].join(' ').toLowerCase();
+
+  let score = 0;
+  let exactPhraseBonus = 0;
+
+  // Check full query phrase match first
+  const fullQuery = queryTokens.join(' ');
+  if (allText.includes(fullQuery)) exactPhraseBonus = 50;
+
+  // Score each keyword match
+  queryTokens.forEach(token => {
+    const isShort = token.length < 4;
+    const tokenStripped = token.replace(/\./g, '');
+
+    // Direct keyword list match (highest value) — strip dots both sides
+    if (entry.keywords.some(k => k.toLowerCase().replace(/\./g, '') === tokenStripped)) score += 20;
+    // Substring match only for longer tokens
+    else if (!isShort && entry.keywords.some(k => k.toLowerCase().replace(/\./g, '').includes(tokenStripped))) score += 12;
+
+    // Title — exact word boundary match for short, includes for long
+    if (isShort) {
+      const titleWords = entry.title.toLowerCase().split(/\W+/);
+      if (titleWords.includes(token)) score += 15;
+    } else if (entry.title.toLowerCase().includes(token)) score += 15;
+
+    // Description match (only longer tokens)
+    if (!isShort && entry.desc.toLowerCase().includes(token)) score += 6;
+
+    // Steps match (only longer tokens)
+    if (!isShort && entry.steps.toLowerCase().includes(token)) score += 4;
+  });
+
+  return score + exactPhraseBonus;
+}
+
+function getStreamBadgeStyle(color) {
+  return `background:${color};`;
+}
+
+function buildResultCard(entry, isTop) {
+  return `
+    <div class="result-card ${isTop ? 'top-match' : ''}">
+      <div class="result-stream-badge" style="${getStreamBadgeStyle(entry.streamColor)}">
+        ${entry.icon} ${entry.streamLabel}
+      </div>
+      <h4>${entry.title}</h4>
+      <div class="result-desc">${entry.desc}</div>
+      <div class="result-steps">
+        <strong>Path:</strong> ${entry.steps}
+      </div>
+      <div class="result-steps">
+        <strong>Entrance:</strong> ${entry.exam}
+      </div>
+      <div class="result-actions">
+        <button class="result-btn" onclick="switchStream('${entry.link}');document.getElementById('streamNav').scrollIntoView({behavior:'smooth'})">
+          See Full Details →
+        </button>
+      </div>
+    </div>`;
+}
+
+function runSearch(query) {
+  if (!query || query.trim().length < 2) {
+    document.getElementById('searchResults').style.display = 'none';
+    document.getElementById('clearBtn').style.display = 'none';
+    return;
+  }
+
+  const tokens = tokenize(query);
+  if (tokens.length === 0) {
+    document.getElementById('searchResults').style.display = 'none';
+    document.getElementById('clearBtn').style.display = 'none';
+    return;
+  }
+
+  document.getElementById('clearBtn').style.display = 'inline-block';
+
+  const scored = CAREER_DATABASE
+    .map(entry => ({ entry, score: scoreResult(entry, tokens) }))
+    .filter(r => r.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 9);
+
+  const resultsEl = document.getElementById('searchResults');
+  const gridEl = document.getElementById('resultsGrid');
+  const noResultsEl = document.getElementById('noResults');
+  const titleEl = document.getElementById('resultsTitle');
+  const countEl = document.getElementById('resultsCount');
+
+  resultsEl.style.display = 'block';
+
+  if (scored.length === 0) {
+    gridEl.innerHTML = '';
+    noResultsEl.style.display = 'block';
+    titleEl.textContent = 'No results found';
+    countEl.textContent = '';
+    return;
+  }
+
+  noResultsEl.style.display = 'none';
+  titleEl.textContent = `Results for "${query}"`;
+  countEl.textContent = `${scored.length} career path${scored.length > 1 ? 's' : ''} found`;
+
+  const topScore = scored[0].score;
+  gridEl.innerHTML = scored.map((r, i) =>
+    buildResultCard(r.entry, i === 0 && r.score >= 12)
+  ).join('');
+
+  // Scroll to results
+  resultsEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+function doSearch() {
+  const val = document.getElementById('searchInput').value.trim();
+  runSearch(val);
+}
+
+function liveSearch(val) {
+  if (val.length >= 3) runSearch(val);
+  else if (val.length === 0) clearSearch();
+}
+
+function quickSearch(query) {
+  document.getElementById('searchInput').value = query;
+  runSearch(query);
+  document.getElementById('searchSection').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function clearSearch() {
+  document.getElementById('searchInput').value = '';
+  document.getElementById('searchResults').style.display = 'none';
+  document.getElementById('clearBtn').style.display = 'none';
+}
+
+// ─── STREAM + LANG ───────────────────────────────────────────
+function switchStream(name, el) {
+  document.querySelectorAll('.stream-section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.snav-btn').forEach(b => b.classList.remove('active'));
+  const target = document.getElementById('s-' + name);
+  if (target) target.classList.add('active');
+  const navBtn = document.querySelector('.snav-btn[data-s="' + name + '"]');
+  if (navBtn) navBtn.classList.add('active');
+  document.getElementById('streamNav').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  return false;
+}
+
+function setLang(lang, btn) {
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.body.classList.remove('en-only', 'ta-only');
+  if (lang === 'en') document.body.classList.add('en-only');
+  if (lang === 'ta') document.body.classList.add('ta-only');
+}
+</script>
+</body>
+</html>
