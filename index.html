@@ -7,29 +7,34 @@
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;0,700;1,400&family=Source+Sans+3:wght@300;400;500;600;700&family=Noto+Sans+Tamil:wght@400;600;700&display=swap" rel="stylesheet"/>
 <style>
 :root {
-  /* AIM REED TRUST brand alignment */
-  --orange: #E8701A;
-  --orange-hover: #C85E10;
-  --orange-light: #FFF3EA;
-  --navy: #1A3A6B;
-  --navy-dark: #0F2444;
-  --teal: #2E7D9C;
+  /* AIM REED TRUST — white, black, light blue palette */
+  /* Light blue #4A86C8 matches the logo circle colour */
+  --primary: #4A86C8;        /* Light blue — logo colour */
+  --primary-hover: #2E6AAB;  /* Medium blue on hover */
+  --primary-light: #EDF4FB;  /* Very light blue tint */
+  --navy: #4A86C8;
+  --navy-dark: #1C2E4A;      /* Deep blue for hero/footer sections */
   --white: #FFFFFF;
   --off-white: #F8F9FA;
-  --cream: #FDFAF5;
-  --text: #2D2D2D;
+  --cream: #F4F6F9;
+  --text: #222222;
+  --text-light: #555555;
   --muted: #6B7280;
   --border: #E2E8F0;
-  --border-warm: #DDD5C8;
-  /* stream colours */
+  --border-warm: #D1D9E6;
+  /* Stream accent colours */
   --green: #1B6B45;
   --violet: #5B2C8D;
   --rose: #B52B27;
   --gold: #D4960A;
   --gold-light: #FFF8E1;
-  --saffron: #E8701A;
-  --saffron-light: #FFF3EA;
-  --deep: #1A3A6B;
+  --orange: #4A86C8;
+  --orange-hover: #2E6AAB;
+  --orange-light: #EDF4FB;
+  --saffron: #4A86C8;
+  --saffron-light: #EDF4FB;
+  --deep: #1C2E4A;
+  --teal: #4A86C8;
 }
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -50,7 +55,8 @@ body {
 
 /* ── SITE HEADER ── */
 .site-header {
-  background: var(--navy-dark);
+  background: #FFFFFF;
+  border-bottom: 1px solid #E2E8F0;
   padding: 0 28px;
   display: flex;
   align-items: center;
@@ -58,6 +64,7 @@ body {
   gap: 16px;
   flex-wrap: wrap;
   min-height: 64px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
 }
 .site-logo {
   display: flex;
@@ -73,15 +80,15 @@ body {
 .site-logo-text { display: flex; flex-direction: column; }
 .site-logo-name {
   font-family: 'Lora', serif;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-weight: 700;
-  color: white;
-  letter-spacing: 0.5px;
+  color: #222222;
+  letter-spacing: 0.3px;
   line-height: 1.1;
 }
 .site-logo-tagline {
   font-size: 10px;
-  color: rgba(255,255,255,0.55);
+  color: #888888;
   letter-spacing: 1.5px;
   text-transform: uppercase;
 }
@@ -92,30 +99,30 @@ body {
   flex-wrap: wrap;
 }
 .site-nav a {
-  color: rgba(255,255,255,0.8);
+  color: #333333;
   text-decoration: none;
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 600;
   padding: 6px 12px;
-  border-radius: 4px;
+  border-radius: 3px;
   transition: all 0.15s;
   white-space: nowrap;
 }
-.site-nav a:hover { color: white; background: rgba(255,255,255,0.1); }
+.site-nav a:hover { color: #4A86C8; background: #EDF4FB; }
 .site-nav .nav-cta {
-  background: var(--orange);
+  background: #4A86C8;
   color: white !important;
-  border-radius: 4px;
+  border-radius: 3px;
   padding: 7px 16px;
-  font-weight: 600;
+  font-weight: 700;
   margin-left: 6px;
 }
-.site-nav .nav-cta:hover { background: var(--orange-hover) !important; }
+.site-nav .nav-cta:hover { background: #2E6AAB !important; }
 
 /* ── LANG BAR ── */
 .lang-bar {
-  background: var(--off-white);
-  border-bottom: 1px solid var(--border);
+  background: #F8F9FA;
+  border-bottom: 1px solid #E2E8F0;
   padding: 7px 28px;
   display: flex;
   justify-content: space-between;
@@ -123,7 +130,7 @@ body {
   gap: 12px;
   flex-wrap: wrap;
 }
-.lang-bar-left { color: var(--muted); font-size: 12px; display: flex; align-items: center; gap: 8px; }
+.lang-bar-left { color: #555555; font-size: 12px; display: flex; align-items: center; gap: 8px; }
 .lang-bar-left strong { color: var(--navy); }
 .lang-btns { display: flex; gap: 6px; }
 .lang-btn {
@@ -138,11 +145,11 @@ body {
   font-weight: 600;
   transition: all 0.2s;
 }
-.lang-btn.active { background: var(--orange); border-color: var(--orange); color: white; }
+.lang-btn.active { background: #4A86C8; border-color: #4A86C8; color: white; }
 
 /* ── HERO ── */
 .hero {
-  background: var(--navy);
+  background: #1C2E4A;
   padding: 56px 28px 64px;
   position: relative;
   overflow: hidden;
@@ -160,9 +167,9 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background: rgba(232,112,26,0.18);
-  border: 1px solid rgba(232,112,26,0.35);
-  color: #FDBA74;
+  background: rgba(26,58,107,0.5);
+  border: 1px solid rgba(26,58,107,0.8);
+  color: #A8CEEE;
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 1.5px;
@@ -181,7 +188,7 @@ body {
   position: relative;
   margin-bottom: 8px;
 }
-.hero h1 em { color: var(--orange); font-style: italic; }
+.hero h1 em { color: #90C3E8; font-style: italic; }
 .hero-ta {
   font-family: 'Lora', serif;
   font-size: clamp(1rem, 2.5vw, 1.5rem);
@@ -212,18 +219,12 @@ body {
   position: relative;
 }
 .stat { text-align: center; }
-.stat-num {
-  font-family: 'Lora', serif;
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--orange);
-  line-height: 1;
-}
+.stat-num { font-family: 'Lora', serif; font-size: 2rem; font-weight: 700; color: #90C3E8; line-height: 1; }
 .stat-label { font-size: 11px; color: rgba(255,255,255,0.45); text-transform: uppercase; letter-spacing: 1.5px; margin-top: 4px; }
 
 /* ── IMPORTANT NOTICE BAR ── */
 .notice-bar {
-  background: var(--orange);
+  background: #4A86C8;
   padding: 12px 28px;
   display: flex;
   align-items: center;
@@ -240,13 +241,13 @@ body {
   top: 0;
   z-index: 100;
   background: white;
-  border-bottom: 2px solid var(--border);
+  border-bottom: 2px solid #E2E8F0;
   padding: 0 28px;
   display: flex;
   gap: 0;
   overflow-x: auto;
   scrollbar-width: none;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 .sticky-nav::-webkit-scrollbar { display: none; }
 .snav-btn {
@@ -268,17 +269,17 @@ body {
 }
 .snav-btn:hover { color: var(--navy); }
 .snav-btn.active { color: var(--navy); }
-.snav-btn[data-s="engineering"].active { border-color: var(--navy); color: var(--navy); }
-.snav-btn[data-s="medical"].active { border-color: var(--rose); color: var(--rose); }
-.snav-btn[data-s="science"].active { border-color: var(--teal); color: var(--teal); }
-.snav-btn[data-s="arts"].active { border-color: var(--violet); color: var(--violet); }
-.snav-btn[data-s="commerce"].active { border-color: var(--green); color: var(--green); }
-.snav-btn[data-s="agriculture"].active { border-color: #5C7A29; color: #5C7A29; }
-.snav-btn[data-s="law"].active { border-color: #8B2500; color: #8B2500; }
-.snav-btn[data-s="vocational"].active { border-color: var(--rose); color: var(--rose); }
-.snav-btn[data-s="distance"].active { border-color: var(--navy); color: var(--navy); }
-.snav-btn[data-s="govt"].active { border-color: var(--orange); color: var(--orange); }
-.snav-btn[data-s="scholarships"].active { border-color: var(--gold); color: var(--gold); }
+.snav-btn[data-s="engineering"].active { border-color: #4A86C8; color: #4A86C8; }
+.snav-btn[data-s="medical"].active { border-color: #4A86C8; color: #4A86C8; }
+.snav-btn[data-s="science"].active { border-color: #4A86C8; color: #4A86C8; }
+.snav-btn[data-s="arts"].active { border-color: #4A86C8; color: #4A86C8; }
+.snav-btn[data-s="commerce"].active { border-color: #4A86C8; color: #4A86C8; }
+.snav-btn[data-s="agriculture"].active { border-color: #4A86C8; color: #4A86C8; }
+.snav-btn[data-s="law"].active { border-color: #4A86C8; color: #4A86C8; }
+.snav-btn[data-s="vocational"].active { border-color: #4A86C8; color: #4A86C8; }
+.snav-btn[data-s="distance"].active { border-color: #4A86C8; color: #4A86C8; }
+.snav-btn[data-s="govt"].active { border-color: #4A86C8; color: #4A86C8; }
+.snav-btn[data-s="scholarships"].active { border-color: #4A86C8; color: #4A86C8; }
 
 /* ── MAIN CONTENT ── */
 .main { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
@@ -319,16 +320,7 @@ body {
 
 /* ── SUBSECTION ── */
 .subsection { margin-bottom: 36px; }
-.subsection-title {
-  font-family: 'Lora', serif;
-  font-size: 1.15rem;
-  font-weight: 700;
-  color: var(--navy);
-  margin-bottom: 4px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
+.subsection-title { font-family: 'Lora', serif; font-size: 1.15rem; font-weight: 700; color: #4A86C8; margin-bottom: 4px; display: flex; align-items: center; gap: 8px; }
 .subsection-title-ta { font-size: 0.83rem; color: var(--muted); margin-bottom: 14px; font-style: italic; }
 .subsection-divider { width: 40px; height: 3px; border-radius: 2px; margin-bottom: 8px; }
 
@@ -387,8 +379,8 @@ body {
   gap: 8px;
   transition: all 0.15s;
 }
-.course-list-item:hover { background: var(--orange-light); border-color: #F4B48A; color: var(--navy); }
-.course-list-item::before { content: '→'; color: var(--orange); font-weight: 700; flex-shrink: 0; }
+.course-list-item:hover { background: #EDF4FB; border-color: #A8CEEE; color: #4A86C8; }
+.course-list-item::before { content: '→'; color: #4A86C8; font-weight: 700; flex-shrink: 0; }
 
 /* ── COLLEGE CARDS ── */
 .college-grid {
@@ -411,16 +403,7 @@ body {
 .college-dot { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; margin-top: 5px; }
 .college-card strong { display: block; font-size: 0.9rem; font-weight: 700; color: var(--navy); margin-bottom: 2px; font-family: 'Lora', serif; }
 .college-card .college-note { font-size: 0.79rem; color: var(--muted); line-height: 1.4; margin-bottom: 6px; }
-.college-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 3px;
-  color: var(--orange);
-  font-size: 0.77rem;
-  font-weight: 700;
-  text-decoration: none;
-  transition: opacity 0.15s;
-}
+.college-link { display: inline-flex; align-items: center; gap: 3px; color: #4A86C8; font-size: 0.77rem; font-weight: 700; text-decoration: none; transition: opacity 0.15s; }
 .college-link::after { content: '↗'; font-size: 0.68rem; }
 .college-link:hover { opacity: 0.7; text-decoration: underline; }
 
@@ -443,18 +426,8 @@ body {
 .exam-name { font-family: 'Lora', serif; font-size: 1.1rem; font-weight: 700; color: var(--navy); }
 .exam-full { font-size: 0.74rem; color: var(--muted); margin: 3px 0 6px; line-height: 1.3; }
 .exam-for { font-size: 0.81rem; color: var(--text); font-weight: 500; margin-bottom: 10px; }
-.exam-link {
-  display: inline-block;
-  background: var(--orange);
-  color: white;
-  font-size: 0.74rem;
-  font-weight: 700;
-  padding: 5px 14px;
-  border-radius: 3px;
-  text-decoration: none;
-  transition: all 0.15s;
-}
-.exam-link:hover { background: var(--orange-hover); }
+.exam-link { display: inline-block; background: #4A86C8; color: white; font-size: 0.74rem; font-weight: 700; padding: 5px 14px; border-radius: 3px; text-decoration: none; transition: all 0.15s; }
+.exam-link:hover { background: #2E6AAB; }
 .exam-link::after { content: ' ↗'; }
 
 /* ── GOVT JOBS GRID ── */
@@ -474,15 +447,7 @@ body {
 .govt-card:hover { box-shadow: 0 4px 14px rgba(0,0,0,0.08); }
 .govt-card h4 { font-size: 0.93rem; font-weight: 700; color: var(--navy); margin-bottom: 4px; font-family: 'Lora', serif; }
 .govt-card p { font-size: 0.81rem; color: var(--muted); margin-bottom: 10px; line-height: 1.4; }
-.govt-card a {
-  display: inline-flex;
-  align-items: center;
-  gap: 3px;
-  color: var(--orange);
-  font-size: 0.79rem;
-  font-weight: 700;
-  text-decoration: none;
-}
+.govt-card a { display: inline-flex; align-items: center; gap: 3px; color: #4A86C8; font-size: 0.8rem; font-weight: 700; text-decoration: none; }
 .govt-card a::after { content: '↗'; font-size: 0.68rem; }
 .govt-card a:hover { text-decoration: underline; }
 
@@ -507,9 +472,9 @@ body {
 .callout.info h4 { color: var(--navy); }
 .callout.info p { color: #1D4ED8; }
 .callout.info a { color: var(--navy); }
-.callout.trust { background: var(--orange-light); border-left: 4px solid var(--orange); }
-.callout.trust h4 { color: #92400E; }
-.callout.trust p { color: #78350F; }
+.callout.trust { background: #EDF4FB; border-left: 4px solid #4A86C8; }
+.callout.trust h4 { color: #4A86C8; }
+.callout.trust p { color: #1C3A5E; }
 
 /* ── SCHOLARSHIP CARDS ── */
 .scholarship-grid {
@@ -517,49 +482,19 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
   gap: 16px;
 }
-.scholarship-card {
-  background: white;
-  border: 1.5px solid #E9C46A;
-  border-radius: 4px;
-  padding: 20px;
-  transition: all 0.2s;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
-}
-.scholarship-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(212,150,10,0.12); }
+.scholarship-card { background: white; border: 1.5px solid #A8CEEE; border-radius: 4px; padding: 20px; transition: all 0.2s; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
+.scholarship-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(26,58,107,0.12); }
 .scholarship-card .sc-icon { font-size: 1.7rem; margin-bottom: 10px; }
 .scholarship-card h4 { font-weight: 700; color: var(--navy); font-size: 0.95rem; margin-bottom: 3px; font-family: 'Lora', serif; }
 .scholarship-card .ta-name { font-size: 0.76rem; color: var(--muted); margin-bottom: 8px; font-style: italic; }
 .scholarship-card p { font-size: 0.82rem; color: #4B5563; line-height: 1.5; margin-bottom: 12px; }
-.scholarship-card a {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  background: var(--orange);
-  color: white;
-  font-size: 0.77rem;
-  font-weight: 700;
-  padding: 6px 14px;
-  border-radius: 3px;
-  text-decoration: none;
-  transition: all 0.15s;
-}
+.scholarship-card a { display: inline-flex; align-items: center; gap: 4px; background: #4A86C8; color: white; font-size: 0.77rem; font-weight: 700; padding: 6px 14px; border-radius: 3px; text-decoration: none; transition: all 0.15s; }
 .scholarship-card a::after { content: '↗'; }
-.scholarship-card a:hover { background: var(--orange-hover); }
+.scholarship-card a:hover { background: #2E6AAB; }
 
 /* ── SERVICES BOX ── */
-.services-box {
-  background: var(--navy);
-  border-radius: 6px;
-  padding: 28px;
-  margin-bottom: 28px;
-  color: white;
-}
-.services-box h3 {
-  font-family: 'Lora', serif;
-  font-size: 1.2rem;
-  color: #FDBA74;
-  margin-bottom: 18px;
-}
+.services-box { background: #1C2E4A; border-radius: 6px; padding: 28px; margin-bottom: 28px; color: white; }
+.services-box h3 { font-family: 'Lora', serif; font-size: 1.2rem; color: #90C3E8; margin-bottom: 18px; }
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
@@ -576,13 +511,13 @@ body {
 }
 .service-item .si-icon { font-size: 1.1rem; flex-shrink: 0; }
 .service-item p { font-size: 0.83rem; color: #D1D5DB; line-height: 1.4; }
-.service-item a { color: #FDBA74; text-decoration: none; font-size: 0.77rem; display: block; margin-top: 3px; font-weight: 600; }
+.service-item a { color: #90C3E8; text-decoration: none; font-size: 0.77rem; display: block; margin-top: 3px; font-weight: 600; }
 .service-item a:hover { text-decoration: underline; }
 .service-item a::after { content: ' ↗'; }
 
 /* ── CTA SECTION ── */
 .cta-section {
-  background: var(--navy);
+  background: #1C2E4A;
   padding: 64px 28px;
   text-align: center;
   position: relative;
@@ -601,7 +536,7 @@ body {
   margin-bottom: 8px;
   font-weight: 700;
 }
-.cta-section h2 em { color: var(--orange); font-style: italic; }
+.cta-section h2 em { color: #90C3E8; font-style: italic; }
 .cta-sub { color: rgba(255,255,255,0.7); font-size: 1rem; position: relative; margin-bottom: 5px; }
 .cta-sub-ta { color: rgba(255,255,255,0.45); font-size: 0.86rem; position: relative; margin-bottom: 40px; }
 .cta-features {
@@ -628,29 +563,12 @@ body {
 .cta-feat .cf-icon { font-size: 1.5rem; margin-bottom: 10px; }
 .cta-feat h4 { color: white; font-size: 0.93rem; font-weight: 700; margin-bottom: 5px; font-family: 'Lora', serif; }
 .cta-feat p { color: #9CA3AF; font-size: 0.79rem; line-height: 1.45; }
-.cta-btn {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  background: var(--orange);
-  color: white;
-  padding: 15px 44px;
-  border-radius: 4px;
-  font-size: 1rem;
-  font-weight: 700;
-  text-decoration: none;
-  position: relative;
-  transition: all 0.2s;
-}
-.cta-btn:hover { background: var(--orange-hover); transform: translateY(-2px); box-shadow: 0 10px 28px rgba(232,112,26,0.35); }
+.cta-btn { display: inline-flex; flex-direction: column; align-items: center; background: #4A86C8; color: white; padding: 15px 44px; border-radius: 3px; font-size: 1rem; font-weight: 700; text-decoration: none; transition: all 0.2s; }
+.cta-btn:hover { background: #2E6AAB; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(26,58,107,0.3); }
 .cta-btn span { font-size: 0.76rem; font-weight: 400; opacity: 0.82; margin-top: 2px; }
 
 /* ── FOOTER ── */
-footer {
-  background: var(--navy-dark);
-  padding: 36px 28px;
-  text-align: center;
-}
+footer { background: #1C2E4A; padding: 36px 28px; text-align: center; }
 .footer-logo {
   font-family: 'Lora', serif;
   font-size: 1.3rem;
@@ -658,8 +576,8 @@ footer {
   color: white;
   margin-bottom: 4px;
 }
-.footer-logo em { color: var(--orange); font-style: italic; }
-.footer-tagline { color: rgba(255,255,255,0.45); font-size: 0.82rem; margin-bottom: 18px; letter-spacing: 1px; text-transform: uppercase; }
+.footer-logo em { color: #90C3E8; font-style: italic; }
+.footer-tagline { color: #90C3E8; font-size: 0.82rem; margin-bottom: 18px; letter-spacing: 1px; text-transform: uppercase; }
 .footer-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 6px; margin-bottom: 18px; }
 .footer-links a {
   color: rgba(255,255,255,0.6);
@@ -687,7 +605,7 @@ footer {
   display: inline-block;
   width: 8px; height: 8px;
   border-radius: 50%;
-  background: var(--orange);
+  background: #4A86C8;
   margin: 0 3px;
   animation: bounce 0.8s infinite alternate;
 }
@@ -699,22 +617,8 @@ footer {
 }
 
 /* ── GOOGLE FORM BUTTON ── */
-.form-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background: var(--orange);
-  color: white !important;
-  font-size: 0.82rem;
-  font-weight: 700;
-  padding: 9px 18px;
-  border-radius: 4px;
-  text-decoration: none;
-  margin-top: 10px;
-  transition: all 0.2s;
-  font-family: 'Source Sans 3', sans-serif;
-}
-.form-btn:hover { background: var(--orange-hover); }
+.form-btn { display: inline-flex; align-items: center; gap: 6px; background: #4A86C8; color: white !important; font-size: 0.82rem; font-weight: 700; padding: 9px 18px; border-radius: 3px; text-decoration: none; margin-top: 10px; transition: all 0.2s; font-family: 'Source Sans 3', sans-serif; }
+.form-btn:hover { background: #2E6AAB; }
 .form-btn::after { content: ' →'; }
 
 /* ── PRINT STYLESHEET ── */
@@ -724,9 +628,9 @@ footer {
   .search-btn, .search-clear, .sug-pill, .result-btn,
   .result-actions { display: none !important; }
   .hero { background: white !important; color: black !important; padding: 20px 0 !important; }
-  .hero h1 { color: #1A3A6B !important; font-size: 1.8rem !important; }
+  .hero h1 { color: #4A86C8 !important; font-size: 1.8rem !important; }
   .stream-section { display: block !important; }
-  .stream-banner { background: #1A3A6B !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .stream-banner { background: #4A86C8 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   .course-list-item, .college-card, .course-card, .exam-card { break-inside: avoid; border: 1px solid #ccc !important; }
   .main { max-width: 100%; padding: 0; }
   a[href]::after { content: " (" attr(href) ")"; font-size: 0.7rem; color: #666; }
@@ -760,7 +664,7 @@ body.ta-only .en-inline { display: none !important; }
   .search-heading h2 { font-size: 1.1rem; }
   .search-heading p { font-size: 0.82rem; }
   .search-input-row { flex-direction: column; gap: 8px; }
-  .search-btn { width: 100%; padding: 12px; }
+  .search-btn { background: #4A86C8; color: white; border: none; padding: 12px 24px; border-radius: 3px; font-family: 'Source Sans 3', sans-serif; font-size: 0.93rem; font-weight: 700; cursor: pointer; transition: all 0.2s; white-space: nowrap; }
   .search-clear { width: 100%; }
   /* Stream nav on mobile */
   .sticky-nav { padding: 0 8px; }
@@ -841,7 +745,7 @@ body.ta-only .en-inline { display: none !important; }
 }
 .search-input::placeholder { color: #A0AEC0; }
 .search-btn {
-  background: var(--orange);
+  background: #4A86C8;
   color: white;
   border: none;
   padding: 12px 24px;
@@ -853,7 +757,7 @@ body.ta-only .en-inline { display: none !important; }
   transition: all 0.2s;
   white-space: nowrap;
 }
-.search-btn:hover { background: var(--orange-hover); }
+.search-btn:hover { background: #2E6AAB; }
 .search-clear {
   background: var(--off-white);
   color: var(--muted);
@@ -876,7 +780,7 @@ body.ta-only .en-inline { display: none !important; }
 }
 .sug-label {
   font-size: 0.78rem;
-  color: var(--muted);
+  color: #4A86C8;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -894,7 +798,7 @@ body.ta-only .en-inline { display: none !important; }
   cursor: pointer;
   transition: all 0.15s;
 }
-.sug-pill:hover { background: var(--orange-light); border-color: var(--orange); color: var(--orange); }
+.sug-pill:hover { background: #EDF4FB; border-color: #4A86C8; color: #4A86C8; }
 
 /* ── RESULTS ── */
 .search-results {
@@ -940,12 +844,12 @@ body.ta-only .en-inline { display: none !important; }
   position: relative;
 }
 .result-card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.1); border-color: #A8C0D8; }
-.result-card.top-match { border-color: var(--orange); border-width: 2px; }
+.result-card.top-match { border-color: #4A86C8; border-width: 2px; }
 .result-card.top-match::before {
   content: '⭐ Best Match';
   position: absolute;
   top: -1px; right: 12px;
-  background: var(--orange);
+  background: #4A86C8;
   color: white;
   font-size: 10px;
   font-weight: 700;
@@ -988,21 +892,8 @@ body.ta-only .en-inline { display: none !important; }
 }
 .result-card .result-steps strong { color: var(--navy); font-weight: 700; }
 .result-actions { display: flex; gap: 8px; flex-wrap: wrap; }
-.result-btn {
-  display: inline-block;
-  background: var(--navy);
-  color: white;
-  font-size: 0.76rem;
-  font-weight: 700;
-  padding: 6px 14px;
-  border-radius: 3px;
-  text-decoration: none;
-  cursor: pointer;
-  border: none;
-  font-family: 'Source Sans 3', sans-serif;
-  transition: all 0.15s;
-}
-.result-btn:hover { background: var(--orange); }
+.result-btn { display: inline-block; background: #4A86C8; color: white; font-size: 0.76rem; font-weight: 700; padding: 6px 14px; border-radius: 3px; cursor: pointer; border: none; font-family: 'Source Sans 3', sans-serif; transition: all 0.15s; }
+.result-btn:hover { background: #2E6AAB; }
 .result-btn.outline {
   background: none;
   border: 1.5px solid var(--navy);
@@ -1018,7 +909,7 @@ body.ta-only .en-inline { display: none !important; }
 }
 
 /* ── STREAM COLOURS ── */
-.eng-bg { background: linear-gradient(135deg, #0F1F3D 0%, #1A3A6B 100%); }
+.eng-bg { background: linear-gradient(135deg, #0F1F3D 0%, #4A86C8 100%); }
 .med-bg { background: linear-gradient(135deg, #7A1C1C 0%, #B52B27 100%); }
 .sci-bg { background: linear-gradient(135deg, #0A4D66 0%, #0D6E8A 100%); }
 .arts-bg { background: linear-gradient(135deg, #3D1A6B 0%, #5B2C8D 100%); }
@@ -1126,9 +1017,9 @@ body.ta-only .en-inline { display: none !important; }
       <div id="noResults" class="no-results" style="display:none">
         <div style="font-size:2rem;margin-bottom:10px">🤔</div>
         <p class="en">No exact match found. Try different words or browse streams below.<br/>
-        <a href="mailto:info@aimreedtrust.org" style="color:var(--orange);font-weight:700">Contact AIM REED Trust for personal guidance →</a></p>
+        <a href="mailto:info@aimreedtrust.org" style="color:#4A86C8;font-weight:700">Contact AIM REED Trust for personal guidance →</a></p>
         <p class="ta">சரியான பொருத்தம் கிடைக்கவில்லை. வேறு வார்த்தைகளை முயற்சிக்கவும்.<br/>
-        <a href="mailto:info@aimreedtrust.org" style="color:var(--orange);font-weight:700">தனிப்பட்ட வழிகாட்டலுக்கு தொடர்பு கொள்ளுங்கள் →</a></p>
+        <a href="mailto:info@aimreedtrust.org" style="color:#4A86C8;font-weight:700">தனிப்பட்ட வழிகாட்டலுக்கு தொடர்பு கொள்ளுங்கள் →</a></p>
       </div>
     </div>
   </div>
@@ -1276,7 +1167,7 @@ body.ta-only .en-inline { display: none !important; }
     <div class="college-grid">
       <div class="college-card"><div class="college-dot" style="background:var(--navy)"></div><div><strong>IIT Madras</strong><div class="college-note en">Premier engineering & research — JEE Advanced</div><div class="college-note ta">JEE Advanced மூலம் சேர்க்கை</div><a class="college-link" href="https://www.iitm.ac.in" target="_blank" rel="noopener">iitm.ac.in</a></div></div>
       <div class="college-card"><div class="college-dot" style="background:#2C4A8F"></div><div><strong>Anna University, Chennai</strong><div class="college-note en">TN's top engineering university — TNEA</div><div class="college-note ta">TNEA மூலம் சேர்க்கை</div><a class="college-link" href="https://www.annauniv.edu" target="_blank" rel="noopener">annauniv.edu</a></div></div>
-      <div class="college-card"><div class="college-dot" style="background:var(--saffron)"></div><div><strong>PSG College of Technology, Coimbatore</strong><div class="college-note en">Reputed autonomous engineering college</div><a class="college-link" href="https://www.psgtech.edu" target="_blank" rel="noopener">psgtech.edu</a></div></div>
+      <div class="college-card"><div class="college-dot" style="background:#4A86C8"></div><div><strong>PSG College of Technology, Coimbatore</strong><div class="college-note en">Reputed autonomous engineering college</div><a class="college-link" href="https://www.psgtech.edu" target="_blank" rel="noopener">psgtech.edu</a></div></div>
       <div class="college-card"><div class="college-dot" style="background:var(--green)"></div><div><strong>TNEA — All TN Engineering Admissions</strong><div class="college-note en">500+ colleges via Class 12 marks — no entrance exam</div><a class="college-link" href="https://www.tneaonline.org" target="_blank" rel="noopener">tneaonline.org</a></div></div>
     </div>
   </div>
@@ -1393,7 +1284,7 @@ body.ta-only .en-inline { display: none !important; }
     <div class="college-grid">
       <div class="college-card"><div class="college-dot" style="background:var(--rose)"></div><div><strong>Madras Medical College, Chennai</strong><div class="college-note en">TN's premier govt medical college — NEET</div><a class="college-link" href="https://www.mmc.ac.in" target="_blank" rel="noopener">mmc.ac.in</a></div></div>
       <div class="college-card"><div class="college-dot" style="background:#9B1C1C"></div><div><strong>TN Medical Admissions (DME)</strong><div class="college-note en">Official TN medical seat allotment portal</div><a class="college-link" href="https://tnhealth.tn.gov.in" target="_blank" rel="noopener">tnhealth.tn.gov.in</a></div></div>
-      <div class="college-card"><div class="college-dot" style="background:var(--saffron)"></div><div><strong>NEET-UG — NTA Official Portal</strong><div class="college-note en">Register and apply for NEET here</div><a class="college-link" href="https://neet.nta.nic.in" target="_blank" rel="noopener">neet.nta.nic.in</a></div></div>
+      <div class="college-card"><div class="college-dot" style="background:#4A86C8"></div><div><strong>NEET-UG — NTA Official Portal</strong><div class="college-note en">Register and apply for NEET here</div><a class="college-link" href="https://neet.nta.nic.in" target="_blank" rel="noopener">neet.nta.nic.in</a></div></div>
     </div>
   </div>
   <div class="callout trust"><div class="callout-icon">💛</div><div><h4 class="en">AIM REED Trust — Medical Dream Support</h4><h4 class="ta">மருத்துவ கனவை நனவாக்க AIM REED Trust</h4><p class="en">NEET coaching is expensive. AIM REED Trust helps deserving students from Tamil Nadu access the support they need to pursue medical education. Reach out to us.</p><p class="ta">NEET பயிற்சி கட்டணம் அதிகம். AIM REED Trust தகுதியான மாணவர்களுக்கு உதவுகிறது.</p></div>
@@ -1581,7 +1472,7 @@ body.ta-only .en-inline { display: none !important; }
       <div class="college-card"><div class="college-dot" style="background:var(--violet)"></div><div><strong>Loyola College, Chennai</strong><div class="college-note">Premier autonomous arts & science college</div><a class="college-link" href="https://www.loyolacollege.edu" target="_blank" rel="noopener">loyolacollege.edu</a></div></div>
       <div class="college-card"><div class="college-dot" style="background:#7B59B6"></div><div><strong>Madras Christian College (MCC)</strong><div class="college-note">Strong humanities & science departments</div><a class="college-link" href="https://www.mcc.edu.in" target="_blank" rel="noopener">mcc.edu.in</a></div></div>
       <div class="college-card"><div class="college-dot" style="background:#5B2C8D"></div><div><strong>Stella Maris College, Chennai</strong><div class="college-note">Top women's college for humanities</div><a class="college-link" href="https://www.stellamariscollege.edu.in" target="_blank" rel="noopener">stellamariscollege.edu.in</a></div></div>
-      <div class="college-card"><div class="college-dot" style="background:var(--saffron)"></div><div><strong>TN Collegiate Education Portal</strong><div class="college-note">All govt arts & science college admissions</div><a class="college-link" href="https://www.tndce.tn.gov.in" target="_blank" rel="noopener">tndce.tn.gov.in</a></div></div>
+      <div class="college-card"><div class="college-dot" style="background:#4A86C8"></div><div><strong>TN Collegiate Education Portal</strong><div class="college-note">All govt arts & science college admissions</div><a class="college-link" href="https://www.tndce.tn.gov.in" target="_blank" rel="noopener">tndce.tn.gov.in</a></div></div>
     </div>
   </div>
   <div class="subsection">
@@ -1940,7 +1831,7 @@ body.ta-only .en-inline { display: none !important; }
   </div>
   <div class="callout tip"><div class="callout-icon">⭐</div><div><h4>Free Career Guidance Available!</h4><p class="en">The TN Department of Employment and Training offers FREE individual/group career guidance, FREE coaching classes for competitive exams, FREE access to well-stocked libraries, and e-content for competitive exams. Visit: <a href="https://tamilnaducareerservices.tn.gov.in" target="_blank" rel="noopener">tamilnaducareerservices.tn.gov.in</a> | YouTube: <a href="https://www.youtube.com/c/TNCareerServicesEmployment" target="_blank" rel="noopener">TN Career Services</a></p></div></div>
   <div class="subsection">
-    <div class="subsection-divider" style="background:var(--saffron)"></div>
+    <div class="subsection-divider" style="background:#4A86C8"></div>
     <div class="subsection-title">🏛️ <span class="en">Central Government — All India Exams</span><span class="ta">மத்திய அரசு தேர்வுகள்</span></div>
     <div class="govt-grid">
       <div class="govt-card"><h4>UPSC Civil Services (IAS / IPS / IFS)</h4><p>Become an IAS, IPS, or IFS officer. The most prestigious government exam in India.</p><a href="https://upsc.gov.in" target="_blank" rel="noopener">upsc.gov.in</a></div>
@@ -1952,7 +1843,7 @@ body.ta-only .en-inline { display: none !important; }
     </div>
   </div>
   <div class="subsection">
-    <div class="subsection-divider" style="background:var(--saffron)"></div>
+    <div class="subsection-divider" style="background:#4A86C8"></div>
     <div class="subsection-title">🌟 <span class="en">Tamil Nadu State Government Exams</span><span class="ta">தமிழ்நாடு மாநில தேர்வுகள்</span></div>
     <div class="govt-grid">
       <div class="govt-card"><h4>TNPSC — Group I, IA, II, IIA, IV, VIII</h4><p>All Tamil Nadu state government jobs — collector, DSP, revenue officer, junior assistants.</p><a href="https://www.tnpsc.gov.in" target="_blank" rel="noopener">tnpsc.gov.in</a></div>
@@ -1961,12 +1852,12 @@ body.ta-only .en-inline { display: none !important; }
     </div>
   </div>
   <div class="subsection">
-    <div class="subsection-divider" style="background:var(--saffron)"></div>
+    <div class="subsection-divider" style="background:#4A86C8"></div>
     <div class="subsection-title">💼 <span class="en">Private Jobs — Job Portals</span><span class="ta">தனியார் வேலைகள்</span></div>
     <div class="college-grid">
       <div class="college-card"><div class="college-dot" style="background:var(--green)"></div><div><strong>TN Private Jobs Portal</strong><div class="college-note">Official Tamil Nadu private sector job listings</div><a class="college-link" href="https://www.tnprivatejobs.tn.gov.in" target="_blank" rel="noopener">tnprivatejobs.tn.gov.in</a></div></div>
       <div class="college-card"><div class="college-dot" style="background:var(--navy)"></div><div><strong>National Career Services</strong><div class="college-note">Central government job portal — all sectors</div><a class="college-link" href="https://www.ncs.gov.in" target="_blank" rel="noopener">ncs.gov.in</a></div></div>
-      <div class="college-card"><div class="college-dot" style="background:var(--saffron)"></div><div><strong>TN Career Services — Free Coaching</strong><div class="college-note">Free competitive exam coaching by TN govt</div><a class="college-link" href="https://tamilnaducareerservices.tn.gov.in" target="_blank" rel="noopener">tamilnaducareerservices.tn.gov.in</a></div></div>
+      <div class="college-card"><div class="college-dot" style="background:#4A86C8"></div><div><strong>TN Career Services — Free Coaching</strong><div class="college-note">Free competitive exam coaching by TN govt</div><a class="college-link" href="https://tamilnaducareerservices.tn.gov.in" target="_blank" rel="noopener">tamilnaducareerservices.tn.gov.in</a></div></div>
     </div>
   </div>
 </section>
@@ -2033,7 +1924,7 @@ body.ta-only .en-inline { display: none !important; }
       <div class="ta-name ta">AIM REED Trust கல்வி மானியம்</div>
       <p class="en">For Tamil Nadu students facing genuine financial hardship — regardless of community or stream. Direct educational support. No bureaucratic barriers. We are here to help.</p>
       <p class="ta">நிதி சிரமம் உள்ள தமிழ்நாடு மாணவர்களுக்கு — சமூகம், பிரிவு வேறுபாடு இன்றி நேரடி கல்வி உதவி.</p>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfd_oikCCyHJwYVaDzwazkpmbgaxMNHqBbmxZ1TSCC1V0gbYg/viewform" target="_blank" rel="noopener" style="background:var(--saffron)">Apply for Guidance / Support</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfd_oikCCyHJwYVaDzwazkpmbgaxMNHqBbmxZ1TSCC1V0gbYg/viewform" target="_blank" rel="noopener" style="background:#4A86C8">Apply for Guidance / Support</a>
     </div>
   </div>
 
@@ -2094,7 +1985,7 @@ body.ta-only .en-inline { display: none !important; }
   </div>
   <div style="text-align:center;margin-bottom:16px;">
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSfd_oikCCyHJwYVaDzwazkpmbgaxMNHqBbmxZ1TSCC1V0gbYg/viewform" target="_blank" rel="noopener"
-       style="display:inline-block;background:#E8701A;color:white;padding:12px 28px;border-radius:4px;font-weight:700;font-size:0.9rem;text-decoration:none;font-family:sans-serif;">
+       style="display:inline-block;background:#4A86C8;color:white;padding:12px 28px;border-radius:4px;font-weight:700;font-size:0.9rem;text-decoration:none;font-family:sans-serif;">
       📋 Apply for Guidance / Support →
     </a>
   </div>
@@ -2112,7 +2003,7 @@ const CAREER_DATABASE = [
 
   // ─── ENGINEERING ─────────────────────────────────────────
   {
-    id: 'cse', icon: '💻', stream: 'engineering', streamLabel: 'Engineering', streamColor: '#1A3A6B',
+    id: 'cse', icon: '💻', stream: 'engineering', streamLabel: 'Engineering', streamColor: '#4A86C8',
     title: 'Computer Science & Software Engineering',
     tamiltitle: 'கணினி அறிவியல் & மென்பொருள் பொறியியல்',
     desc: 'Build apps, websites, AI systems, games and software. One of the highest paying fields with global job opportunities.',
@@ -2121,7 +2012,7 @@ const CAREER_DATABASE = [
     exam: 'JEE / TNEA', link: 'engineering'
   },
   {
-    id: 'mech', icon: '⚙️', stream: 'engineering', streamLabel: 'Engineering', streamColor: '#1A3A6B',
+    id: 'mech', icon: '⚙️', stream: 'engineering', streamLabel: 'Engineering', streamColor: '#4A86C8',
     title: 'Mechanical / Automobile / Aerospace Engineering',
     tamiltitle: 'இயந்திர / மகிழுந்து / விண்வெளி பொறியியல்',
     desc: 'Design engines, vehicles, machines, aircraft and manufacturing systems. Strong demand in automobile and defence sectors.',
@@ -2130,7 +2021,7 @@ const CAREER_DATABASE = [
     exam: 'JEE / TNEA', link: 'engineering'
   },
   {
-    id: 'civil', icon: '🏗️', stream: 'engineering', streamLabel: 'Engineering', streamColor: '#1A3A6B',
+    id: 'civil', icon: '🏗️', stream: 'engineering', streamLabel: 'Engineering', streamColor: '#4A86C8',
     title: 'Civil & Structural Engineering',
     tamiltitle: 'சிவில் & கட்டமைப்பு பொறியியல்',
     desc: 'Design bridges, roads, buildings, dams and infrastructure. Good government and private sector opportunities in Tamil Nadu.',
@@ -2139,7 +2030,7 @@ const CAREER_DATABASE = [
     exam: 'JEE / TNEA / NATA', link: 'engineering'
   },
   {
-    id: 'eee', icon: '⚡', stream: 'engineering', streamLabel: 'Engineering', streamColor: '#1A3A6B',
+    id: 'eee', icon: '⚡', stream: 'engineering', streamLabel: 'Engineering', streamColor: '#4A86C8',
     title: 'Electrical & Electronics Engineering',
     tamiltitle: 'மின்சாரம் & மின்னணுவியல் பொறியியல்',
     desc: 'Power systems, electronics, circuits, communication systems. Good opportunities in TANGEDCO, BSNL, ISRO and private sector.',
@@ -2148,7 +2039,7 @@ const CAREER_DATABASE = [
     exam: 'JEE / TNEA', link: 'engineering'
   },
   {
-    id: 'biotech_eng', icon: '🧬', stream: 'engineering', streamLabel: 'Engineering', streamColor: '#1A3A6B',
+    id: 'biotech_eng', icon: '🧬', stream: 'engineering', streamLabel: 'Engineering', streamColor: '#4A86C8',
     title: 'Biotechnology / Chemical / Food Technology',
     tamiltitle: 'உயிரித்தொழில்நுட்பம் / வேதியியல் / உணவு தொழில்நுட்பம்',
     desc: 'Work in pharma, food processing, chemical plants, research labs. Tamil Nadu has many pharma and food processing industries.',
